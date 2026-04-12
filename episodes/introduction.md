@@ -29,6 +29,7 @@ exercises: 30
 **Data curation** is the process of organizing, documenting, preserving, and maintaining data so that it remains useful, understandable, and reusable over time.
 
 It includes:
+
 - Cleaning and validating data
 - Organizing files and formats
 - Creating metadata
@@ -46,12 +47,14 @@ Data curation is not just storing files — it is making data usable for future 
 ## Why Data Curation Matters
 
 Poorly curated data can lead to:
+
 - Lost files
 - Confusing variable names
 - Missing context
 - Irreproducible research
 
 Well-curated data helps:
+
 - Ensure reproducibility
 - Enable collaboration
 - Improve data quality
@@ -125,12 +128,14 @@ Avoid:
 ### 3. Documentation
 
 Every dataset should include documentation:
+
 - README file
 - Variable descriptions
 - Units of measurement
 - Data source notes
 
 Example README includes:
+
 - Project title
 - Author
 - Date created
@@ -143,6 +148,7 @@ Example README includes:
 Metadata = “data about data”
 
 Examples:
+
 - Who created the dataset?
 - When was it collected?
 - What instruments were used?
@@ -161,13 +167,15 @@ Why is metadata essential if someone else uses your dataset five years later?
 These are related but different:
 
 ### Data Cleaning:
-Fixes errors in data
+Fixes errors in data i.e.,
+
 - Missing values
 - Typos
 - Duplicates
 
 ### Data Curation:
-Maintains long-term usability
+Maintains long-term usability.
+
 - Documentation
 - Preservation
 - Versioning
@@ -179,11 +187,13 @@ Both are necessary.
 ## File Formats Matter
 
 Choose formats that are:
+
 - Open
 - Reusable
 - Non-proprietary
 
 Preferred:
+
 - CSV instead of XLSX
 - TXT instead of DOCX for plain text
 - GeoJSON instead of closed GIS formats when possible
@@ -195,6 +205,7 @@ Preferred:
 Track changes to files over time.
 
 Methods:
+
 - Version numbering (`v1`, `v2`)
 - Git / GitHub
 - Changelogs
@@ -222,6 +233,7 @@ Use the 3-2-1 Rule:
 - 1 offsite backup
 
 Example:
+
 - Local computer
 - External drive
 - Cloud storage
@@ -280,16 +292,20 @@ Even accurate data becomes nearly useless without context.
 Create a curated folder structure for a sample project.
 
 Include:
+
 - Raw data folder
 - Clean data folder
 - README file
 - Metadata sheet
+
+Tip: You can check our GitHub page on how we handled our data. 
 
 ---
 
 ## Accessibility and Ethics in Data Curation
 
 Remember:
+
 - Protect sensitive data
 - Remove personal identifiers
 - Follow privacy guidelines
@@ -300,6 +316,7 @@ Remember:
 ## Final Takeaways
 
 Good data curation:
+
 - Saves time later
 - Prevents mistakes
 - Improves collaboration
