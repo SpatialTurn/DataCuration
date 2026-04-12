@@ -101,12 +101,19 @@ Use clear folder structures.
 
 Example:
 
-project/
-├── data_raw/
-├── data_clean/
-├── scripts/
-├── outputs/
-└── documentation/
+In your project folder:
+
+project/-
+
+You can file sub-folders with the following names:
+
+1. data_raw/
+2. data_clean/
+3. scripts/
+4. outputs/
+5. documentation/
+
+You can for example, write scripts in a way that save the outputs in `output/`. This helps maintain the continuity of your research. One needs to keep in mind that they should be able to redo the process of their application of research with ease. 
 
 ---
 
@@ -278,6 +285,7 @@ The FAIR framework is widely used in research data management.
 ## Real-World Example
 
 Imagine sharing a climate dataset without:
+
 - Units
 - Dates
 - Sensor details
