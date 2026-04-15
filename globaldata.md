@@ -29,6 +29,7 @@ exercises: 20
 Data curation does not stop at organizing files on your computer.
 
 As projects grow larger, data must often be:
+
 - Shared across institutions
 - Archived in repositories
 - Transferred across countries
@@ -43,6 +44,7 @@ Modern data science depends on scalable curation systems.
 Before curation begins, data must first be generated.
 
 ### Common sources of data:
+
 - Scientific instruments (sensors, satellites, microscopes)
 - Surveys and questionnaires
 - Field observations
@@ -51,6 +53,7 @@ Before curation begins, data must first be generated.
 
 ### Example:
 A weather station may generate:
+
 - Temperature every minute
 - Humidity every hour
 - Rainfall every day
@@ -69,13 +72,15 @@ The way data is generated affects how it should be curated later.
 ### What is PURR?
 
 **PURR (Purdue University Research Repository)** is Purdue University's platform for:
+
 - Publishing datasets
 - Preserving research outputs
 - Sharing reproducible workflows
 
-:contentReference[oaicite:0]{index=0}
+You can find the website [here](https://purr.purdue.edu/).
 
 PURR helps researchers:
+
 - Store curated datasets securely
 - Assign DOIs (Digital Object Identifiers)
 - Share data publicly or privately
@@ -89,6 +94,7 @@ Repositories protect data from loss and make it reusable beyond the original pro
 ## 3. Data Publishing and DOI Assignment
 
 When curated data is deposited into repositories like PURR:
+
 - It receives permanent identifiers
 - Others can cite it in publications
 - It becomes discoverable worldwide
@@ -105,12 +111,14 @@ This turns datasets into scholarly products.
 Some datasets are too large for email, USB drives, or local sharing.
 
 Examples:
+
 - Satellite imagery archives
 - Climate model simulations
 - Genomics databases
 - High-resolution remote sensing data
 
 These often require:
+
 - Cloud platforms
 - Distributed storage systems
 - High-speed transfer protocols
@@ -123,9 +131,10 @@ Large-scale research often uses tools such as:
 
 ### Globus
 
-:contentReference[oaicite:1]{index=1}
+Find it [here](https://www.globus.org/). 
 
 Globus is widely used for:
+
 - Secure high-volume data transfer
 - Moving terabytes between institutions
 - Automating research workflows
@@ -145,6 +154,7 @@ Modern curated datasets may live in:
 - Institutional HPC clusters
 
 These systems support:
+
 - Redundancy
 - Backup replication
 - Global accessibility
@@ -182,6 +192,7 @@ For large collaborative projects:
 Generate → Process → Curate → Store → Transfer → Archive → Reuse
 
 Unlike small projects, this cycle may involve:
+
 - Multiple countries
 - Multiple institutions
 - Automated pipelines
@@ -191,11 +202,13 @@ Unlike small projects, this cycle may involve:
 ## 9. Reproducibility in Shared Infrastructure
 
 When sharing globally:
+
 - File formats must be standardized
 - Metadata must be machine-readable
 - Access permissions must be managed carefully
 
 Example standards:
+
 - NetCDF for climate data
 - HDF5 for scientific arrays
 - JSON metadata schemas
@@ -205,6 +218,7 @@ Example standards:
 ## 10. Future of Data Curation
 
 Emerging trends include:
+
 - AI-assisted metadata generation
 - Automated cloud archiving
 - FAIR-compliant repositories
@@ -215,6 +229,7 @@ Emerging trends include:
 ## Final Takeaways
 
 Data curation today extends far beyond local folders:
+
 - Institutions use repositories like PURR
 - Large datasets require cloud infrastructure
 - Global collaboration depends on scalable transfer systems
