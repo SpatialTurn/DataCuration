@@ -15,16 +15,16 @@
 carpentry: 'incubator'
 
 # Alt-text description of the lesson.
-carpentry_description: 'Lesson Description'
+carpentry_description: 'Geospatial data types, metadata standards, data management across disciplines, and best practices for sharing and preserving spatial datasets'
 
 # Overall title for pages.
-title: 'Lesson Title' # FIXME
+title: 'Looking Ahead' # FIXME
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: ~ # FIXME
+created: 2026-06-25 # FIXME
 
 # Comma-separated list of keywords for the lesson
-keywords: 'software, data, lesson, The Carpentries' # FIXME
+keywords: 'discussion, curation, lesson, The Carpentries' # FIXME
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
