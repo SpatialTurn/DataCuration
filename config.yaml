@@ -66,8 +66,8 @@ contact: 'ilindsay@purdue.edu' # FIXME
 
 # Order of episodes in your lesson
 episodes: 
-- data-curation.md
 - carpentry.md
+- data-curation.md
 
 # Information for Learners
 learners: 

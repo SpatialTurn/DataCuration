@@ -237,7 +237,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="data-curation.html">1. Data Curation, Sharing, and Collaboration</a>
+        <a href="carpentry.html">1. Building Your Own Carpentries Lesson</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -249,7 +249,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="carpentry.html">2. Building Your Own Carpentries Lesson</a>
+        <a href="data-curation.html">2. Additional Readings</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -313,367 +313,7 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>All in One View</h1>
         
-<section id="aio-data-curation"><p>Content from <a href="data-curation.html">Data Curation, Sharing, and Collaboration</a></p>
-<hr>
-<p>Last updated on 2026-06-25 |
-
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/data-curation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 40 minutes</p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<div class="overview card">
-<h2 class="card-header">Overview</h2>
-<div class="row g-0">
-<div class="col-md-4">
-<div class="card-body">
-<div class="inner">
-<h3 class="card-title">Questions</h3>
-<ul>
-<li>What is data curation and why does it matter for research?</li>
-<li>What practical steps can I take to keep my data organized and
-reusable?</li>
-<li>What are the FAIR principles?</li>
-<li>How do I publish and share research data at scale?</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<div class="inner bordered">
-<h3 class="card-title">Objectives</h3>
-<ul>
-<li>Understand the purpose and lifecycle of data curation</li>
-<li>Apply practical organization, naming, and documentation standards to
-research data</li>
-<li>Describe the FAIR principles and why they matter for
-reproducibility</li>
-<li>Know how to use institutional repositories (PURR) and data transfer
-tools (Globus) to publish and share data</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<section><h2 class="section-heading" id="what-is-data-curation">What Is Data Curation?<a class="anchor" aria-label="anchor" href="#what-is-data-curation"></a>
-</h2>
-<hr class="half-width">
-<p><strong>Data curation</strong> is the process of organizing,
-documenting, preserving, and maintaining data so that it remains useful,
-understandable, and reusable over time. It is not just storing files —
-it is making data usable for future analysis, whether by you, your
-collaborators, or researchers you have never met.</p>
-<p>Poorly curated data leads to lost files, confusing variable names,
-missing context, and irreproducible results. Well-curated data saves
-time, prevents mistakes, enables collaboration, and makes research
-reproducible.</p>
-<p>Consider the difference:</p>
-<ul>
-<li>
-<code>final_data_v2_revised_REAL_final.csv</code> — tells you almost
-nothing</li>
-<li>
-<code>soil_moisture_2025_stationA_clean.csv</code> — tells you the
-variable, year, location, and processing stage</li>
-</ul>
-<p>Curation begins when data is created, not after the project ends.</p>
-<hr></section><section><h2 class="section-heading" id="the-data-curation-lifecycle">The Data Curation Lifecycle<a class="anchor" aria-label="anchor" href="#the-data-curation-lifecycle"></a>
-</h2>
-<hr class="half-width">
-<p>Data curation is not a one-time task. It happens throughout the life
-of a dataset:</p>
-<ol style="list-style-type: decimal">
-<li>
-<strong>Create / Collect</strong> — data is generated from
-instruments, surveys, fieldwork, APIs, or computational models</li>
-<li>
-<strong>Organize</strong> — files are structured into a logical
-folder hierarchy</li>
-<li>
-<strong>Document</strong> — metadata and README files are written to
-explain what the data contains</li>
-<li>
-<strong>Store / Backup</strong> — data is saved redundantly across
-multiple locations</li>
-<li>
-<strong>Preserve</strong> — data is archived in stable, open formats
-for long-term access</li>
-<li>
-<strong>Share / Publish</strong> — data is deposited in a repository
-and assigned a permanent identifier</li>
-<li>
-<strong>Reuse / Reanalyze</strong> — others discover, cite, and
-build on the data</li>
-</ol>
-<p>For small projects this cycle may happen on a single laptop. For
-large collaborative projects it may span multiple institutions,
-countries, and automated pipelines. The principles are the same — the
-infrastructure scales.</p>
-<hr></section><section><h2 class="section-heading" id="practical-data-organization">Practical Data Organization<a class="anchor" aria-label="anchor" href="#practical-data-organization"></a>
-</h2>
-<hr class="half-width">
-<div class="section level3">
-<h3 id="folder-structure">Folder Structure<a class="anchor" aria-label="anchor" href="#folder-structure"></a>
-</h3>
-<p>A clear folder hierarchy makes it easy to find files and reproduce
-your workflow. A common pattern:</p>
-<pre><code>project/
-├── data_raw/        ← original, untouched data
-├── data_clean/      ← processed and analysis-ready data
-├── scripts/         ← code that transforms raw → clean
-├── outputs/         ← figures, maps, tables
-└── documentation/   ← README, metadata, data dictionary</code></pre>
-<p>Write your scripts so that they read from <code>data_raw/</code> and
-save results to <code>outputs/</code>. This way you can always reproduce
-the full workflow from the original data.</p>
-</div>
-<div class="section level3">
-<h3 id="naming-conventions">Naming Conventions<a class="anchor" aria-label="anchor" href="#naming-conventions"></a>
-</h3>
-<p>Good file names are descriptive, consistent, and
-machine-readable:</p>
-<ul>
-<li>
-<code>river_discharge_monthly_2024.csv</code> — clear</li>
-<li>
-<code>data_new_latest2.csv</code> — unclear</li>
-</ul>
-<p>Avoid spaces, special characters, and ambiguous version labels. Use
-dates in <code>YYYY-MM-DD</code> format so files sort
-chronologically.</p>
-</div>
-<div class="section level3">
-<h3 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
-</h3>
-<p>Every dataset should include a <strong>README</strong> file that
-covers:</p>
-<ul>
-<li>Project title and author</li>
-<li>Date created and last updated</li>
-<li>Description of each file</li>
-<li>Variable names and units of measurement</li>
-<li>Data source and collection method</li>
-<li>Any known limitations or gaps</li>
-</ul>
-<p>The README is the single most important piece of documentation you
-can write. If someone finds your dataset five years from now, the README
-is what makes it usable or useless.</p>
-</div>
-<div class="section level3">
-<h3 id="metadata">Metadata<a class="anchor" aria-label="anchor" href="#metadata"></a>
-</h3>
-<p>Metadata is “data about data” — structured information that describes
-what a dataset contains, how it was collected, and what the fields mean.
-Good metadata answers: who created it, when, with what instruments, and
-what do the columns represent?</p>
-<p>For geospatial data, metadata also includes the coordinate reference
-system, spatial extent, and resolution.</p>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="file-formats">File Formats<a class="anchor" aria-label="anchor" href="#file-formats"></a>
-</h2>
-<hr class="half-width">
-<p>Choose formats that are open, widely supported, and non-proprietary
-whenever possible:</p>
-<ul>
-<li>
-<strong>CSV</strong> over XLSX for tabular data</li>
-<li>
-<strong>GeoJSON</strong> or <strong>GeoPackage</strong> over
-proprietary GIS formats</li>
-<li>
-<strong>GeoTIFF</strong> for raster data (already georeferenced and
-widely supported)</li>
-<li>
-<strong>Plain text</strong> (TXT, MD) over DOCX for
-documentation</li>
-</ul>
-<p>Open formats ensure your data remains readable regardless of which
-software is available in the future.</p>
-<hr></section><section><h2 class="section-heading" id="version-control">Version Control<a class="anchor" aria-label="anchor" href="#version-control"></a>
-</h2>
-<hr class="half-width">
-<p>Track changes to your data and code over time. Two complementary
-approaches:</p>
-<ul>
-<li>
-<strong>Version numbering</strong> for data files —
-<code>survey_cleaned_v1.csv</code>, <code>survey_cleaned_v2.csv</code>,
-with a changelog documenting what changed between versions</li>
-<li>
-<strong>Git / GitHub</strong> for code and documentation — tracks
-every change with a full history</li>
-</ul>
-<div id="never-overwrite-raw-data" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Callout</span>
-<div id="never-overwrite-raw-data" class="callout-inner">
-<h3 class="callout-title">Never Overwrite Raw Data</h3>
-<div class="callout-content">
-<p>Keep your original raw data unchanged in <code>data_raw/</code>. All
-cleaning and transformation should produce new files in
-<code>data_clean/</code>. If something goes wrong, you can always start
-over from the original.</p>
-</div>
-</div>
-</div>
-<hr></section><section><h2 class="section-heading" id="backup-the-3-2-1-rule">Backup: The 3-2-1 Rule<a class="anchor" aria-label="anchor" href="#backup-the-3-2-1-rule"></a>
-</h2>
-<hr class="half-width">
-<ul>
-<li>
-<strong>3</strong> copies of your data</li>
-<li>
-<strong>2</strong> different storage types (e.g., local drive +
-cloud)</li>
-<li>
-<strong>1</strong> offsite backup</li>
-</ul>
-<p>For example: your laptop, an external hard drive, and a cloud
-service. If any one fails, you still have two copies.</p>
-<hr></section><section><h2 class="section-heading" id="fair-principles">FAIR Principles<a class="anchor" aria-label="anchor" href="#fair-principles"></a>
-</h2>
-<hr class="half-width">
-<p>The FAIR framework is the widely adopted standard for research data
-management. Curated data should be:</p>
-<ul>
-<li>
-<strong>Findable</strong> — stored in a searchable repository with a
-persistent identifier (like a DOI)</li>
-<li>
-<strong>Accessible</strong> — available to authorized users through
-standard protocols</li>
-<li>
-<strong>Interoperable</strong> — uses open formats and standard
-vocabularies so it works with other tools and datasets</li>
-<li>
-<strong>Reusable</strong> — documented thoroughly enough that
-someone else can understand and use it without contacting you</li>
-</ul>
-<p>FAIR does not mean all data must be public — it means data should be
-<em>as open as possible and as closed as necessary</em>, with clear
-access conditions.</p>
-<hr></section><section><h2 class="section-heading" id="publishing-data-institutional-repositories">Publishing Data: Institutional Repositories<a class="anchor" aria-label="anchor" href="#publishing-data-institutional-repositories"></a>
-</h2>
-<hr class="half-width">
-<p>When curated data is deposited into a repository, it receives a
-permanent identifier, becomes discoverable worldwide, and can be cited
-in publications just like a journal article.</p>
-<div class="section level3">
-<h3 id="purr-purdue-university-research-repository">PURR (Purdue University Research Repository)<a class="anchor" aria-label="anchor" href="#purr-purdue-university-research-repository"></a>
-</h3>
-<p><a href="https://purr.purdue.edu/" class="external-link">PURR</a> is Purdue University’s
-platform for publishing and preserving research data. It allows
-researchers to:</p>
-<ul>
-<li>Store curated datasets securely</li>
-<li>Assign DOIs (Digital Object Identifiers) so others can cite the
-data</li>
-<li>Share data publicly or with restricted access</li>
-<li>Meet data management requirements from funding agencies and
-journals</li>
-</ul>
-<p>Repositories like PURR protect data from loss and make it reusable
-beyond the original project. Many universities and funding agencies now
-require a data management plan that includes repository deposit.</p>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="sharing-large-datasets-globus">Sharing Large Datasets: Globus<a class="anchor" aria-label="anchor" href="#sharing-large-datasets-globus"></a>
-</h2>
-<hr class="half-width">
-<p>Some datasets — satellite imagery archives, climate model
-simulations, high-resolution remote sensing data — are too large for
-email, USB drives, or standard cloud sharing. These require dedicated
-transfer infrastructure.</p>
-<div class="section level3">
-<h3 id="what-is-globus">What Is Globus?<a class="anchor" aria-label="anchor" href="#what-is-globus"></a>
-</h3>
-<p><a href="https://www.globus.org/" class="external-link">Globus</a> is a research data
-transfer platform widely used in academia. It supports:</p>
-<ul>
-<li>Secure, high-volume transfers (terabytes between institutions)</li>
-<li>Automatic retry and verification (no babysitting long
-transfers)</li>
-<li>Scheduled and automated workflows</li>
-<li>Transfers between institutional HPC clusters, cloud storage, and
-personal machines</li>
-</ul>
-<p>For example, a researcher in Indiana can transfer 5 TB of satellite
-data to collaborators in Europe reliably and securely, without worrying
-about interrupted connections or corrupted files.</p>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="ethics-and-privacy">Ethics and Privacy<a class="anchor" aria-label="anchor" href="#ethics-and-privacy"></a>
-</h2>
-<hr class="half-width">
-<p>Research data often contains sensitive information. Before
-sharing:</p>
-<ul>
-<li>Remove personal identifiers from survey and demographic data</li>
-<li>Follow your institution’s IRB (Institutional Review Board)
-guidelines</li>
-<li>Respect licensing restrictions on data you did not collect
-yourself</li>
-<li>Consider aggregation levels carefully for geospatial data —
-fine-grained location data can expose individuals even when names are
-removed</li>
-</ul>
-<hr>
-<div id="exercise-curate-a-sample-project" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<span class="callout-header">Discussion</span>
-<div id="exercise-curate-a-sample-project" class="callout-inner">
-<h3 class="callout-title">Exercise: Curate a Sample Project</h3>
-<div class="callout-content">
-<p>Create a folder structure for a hypothetical research project on
-urban heat islands in your city. Include:</p>
-<ol style="list-style-type: decimal">
-<li>A <code>data_raw/</code> folder (what files would go here?)</li>
-<li>A <code>data_clean/</code> folder</li>
-<li>A <code>scripts/</code> folder</li>
-<li>A <code>documentation/</code> folder containing a brief README (3–5
-sentences describing the project, data sources, and key variables)</li>
-</ol>
-<p>If time allows, discuss with a partner: what metadata would someone
-need to reuse your dataset five years from now?</p>
-</div>
-</div>
-</div>
-<hr>
-<div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
-</div>
-<span class="callout-header">Key Points</span>
-<div class="callout-inner">
-<div class="callout-content">
-<ul>
-<li>Data curation is an ongoing process that begins when data is
-created, not after a project ends.</li>
-<li>Practical habits — clear folder structures, descriptive file names,
-README files, and open formats — are the foundation of good
-curation.</li>
-<li>The FAIR principles (Findable, Accessible, Interoperable, Reusable)
-are the standard framework for research data management.</li>
-<li>Institutional repositories like PURR provide permanent, citable
-homes for research data.</li>
-<li>Large-scale data sharing relies on tools like Globus that handle
-high-volume transfers reliably.</li>
-</ul>
-</div>
-</div>
-</div>
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section><section id="aio-carpentry"><p>Content from <a href="carpentry.html">Building Your Own Carpentries Lesson</a></p>
+<section id="aio-carpentry"><p>Content from <a href="carpentry.html">Building Your Own Carpentries Lesson</a></p>
 <hr>
 <p>Last updated on 2026-06-25 |
 
@@ -1168,6 +808,366 @@ website automatically from your Markdown files.</li>
 controls which episodes appear and in what order.</li>
 <li>GitHub Desktop lets you edit lesson files locally and push changes
 without using the command line.</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-data-curation"><p>Content from <a href="data-curation.html">Additional Readings</a></p>
+<hr>
+<p>Last updated on 2026-06-25 |
+
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/data-curation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 40 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What is data curation and why does it matter for research?</li>
+<li>What practical steps can I take to keep my data organized and
+reusable?</li>
+<li>What are the FAIR principles?</li>
+<li>How do I publish and share research data at scale?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Understand the purpose and lifecycle of data curation</li>
+<li>Apply practical organization, naming, and documentation standards to
+research data</li>
+<li>Describe the FAIR principles and why they matter for
+reproducibility</li>
+<li>Know how to use institutional repositories (PURR) and data transfer
+tools (Globus) to publish and share data</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="what-is-data-curation">What Is Data Curation?<a class="anchor" aria-label="anchor" href="#what-is-data-curation"></a>
+</h2>
+<hr class="half-width">
+<p><strong>Data curation</strong> is the process of organizing,
+documenting, preserving, and maintaining data so that it remains useful,
+understandable, and reusable over time. It is not just storing files —
+it is making data usable for future analysis, whether by you, your
+collaborators, or researchers you have never met.</p>
+<p>Poorly curated data leads to lost files, confusing variable names,
+missing context, and irreproducible results. Well-curated data saves
+time, prevents mistakes, enables collaboration, and makes research
+reproducible.</p>
+<p>Consider the difference:</p>
+<ul>
+<li>
+<code>final_data_v2_revised_REAL_final.csv</code> — tells you almost
+nothing</li>
+<li>
+<code>soil_moisture_2025_stationA_clean.csv</code> — tells you the
+variable, year, location, and processing stage</li>
+</ul>
+<p>Curation begins when data is created, not after the project ends.</p>
+<hr></section><section><h2 class="section-heading" id="the-data-curation-lifecycle">The Data Curation Lifecycle<a class="anchor" aria-label="anchor" href="#the-data-curation-lifecycle"></a>
+</h2>
+<hr class="half-width">
+<p>Data curation is not a one-time task. It happens throughout the life
+of a dataset:</p>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Create / Collect</strong> — data is generated from
+instruments, surveys, fieldwork, APIs, or computational models</li>
+<li>
+<strong>Organize</strong> — files are structured into a logical
+folder hierarchy</li>
+<li>
+<strong>Document</strong> — metadata and README files are written to
+explain what the data contains</li>
+<li>
+<strong>Store / Backup</strong> — data is saved redundantly across
+multiple locations</li>
+<li>
+<strong>Preserve</strong> — data is archived in stable, open formats
+for long-term access</li>
+<li>
+<strong>Share / Publish</strong> — data is deposited in a repository
+and assigned a permanent identifier</li>
+<li>
+<strong>Reuse / Reanalyze</strong> — others discover, cite, and
+build on the data</li>
+</ol>
+<p>For small projects this cycle may happen on a single laptop. For
+large collaborative projects it may span multiple institutions,
+countries, and automated pipelines. The principles are the same — the
+infrastructure scales.</p>
+<hr></section><section><h2 class="section-heading" id="practical-data-organization">Practical Data Organization<a class="anchor" aria-label="anchor" href="#practical-data-organization"></a>
+</h2>
+<hr class="half-width">
+<div class="section level3">
+<h3 id="folder-structure">Folder Structure<a class="anchor" aria-label="anchor" href="#folder-structure"></a>
+</h3>
+<p>A clear folder hierarchy makes it easy to find files and reproduce
+your workflow. A common pattern:</p>
+<pre><code>project/
+├── data_raw/        ← original, untouched data
+├── data_clean/      ← processed and analysis-ready data
+├── scripts/         ← code that transforms raw → clean
+├── outputs/         ← figures, maps, tables
+└── documentation/   ← README, metadata, data dictionary</code></pre>
+<p>Write your scripts so that they read from <code>data_raw/</code> and
+save results to <code>outputs/</code>. This way you can always reproduce
+the full workflow from the original data.</p>
+</div>
+<div class="section level3">
+<h3 id="naming-conventions">Naming Conventions<a class="anchor" aria-label="anchor" href="#naming-conventions"></a>
+</h3>
+<p>Good file names are descriptive, consistent, and
+machine-readable:</p>
+<ul>
+<li>
+<code>river_discharge_monthly_2024.csv</code> — clear</li>
+<li>
+<code>data_new_latest2.csv</code> — unclear</li>
+</ul>
+<p>Avoid spaces, special characters, and ambiguous version labels. Use
+dates in <code>YYYY-MM-DD</code> format so files sort
+chronologically.</p>
+</div>
+<div class="section level3">
+<h3 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
+</h3>
+<p>Every dataset should include a <strong>README</strong> file that
+covers:</p>
+<ul>
+<li>Project title and author</li>
+<li>Date created and last updated</li>
+<li>Description of each file</li>
+<li>Variable names and units of measurement</li>
+<li>Data source and collection method</li>
+<li>Any known limitations or gaps</li>
+</ul>
+<p>The README is the single most important piece of documentation you
+can write. If someone finds your dataset five years from now, the README
+is what makes it usable or useless.</p>
+</div>
+<div class="section level3">
+<h3 id="metadata">Metadata<a class="anchor" aria-label="anchor" href="#metadata"></a>
+</h3>
+<p>Metadata is “data about data” — structured information that describes
+what a dataset contains, how it was collected, and what the fields mean.
+Good metadata answers: who created it, when, with what instruments, and
+what do the columns represent?</p>
+<p>For geospatial data, metadata also includes the coordinate reference
+system, spatial extent, and resolution.</p>
+<hr>
+</div>
+</section><section><h2 class="section-heading" id="file-formats">File Formats<a class="anchor" aria-label="anchor" href="#file-formats"></a>
+</h2>
+<hr class="half-width">
+<p>Choose formats that are open, widely supported, and non-proprietary
+whenever possible:</p>
+<ul>
+<li>
+<strong>CSV</strong> over XLSX for tabular data</li>
+<li>
+<strong>GeoJSON</strong> or <strong>GeoPackage</strong> over
+proprietary GIS formats</li>
+<li>
+<strong>GeoTIFF</strong> for raster data (already georeferenced and
+widely supported)</li>
+<li>
+<strong>Plain text</strong> (TXT, MD) over DOCX for
+documentation</li>
+</ul>
+<p>Open formats ensure your data remains readable regardless of which
+software is available in the future.</p>
+<hr></section><section><h2 class="section-heading" id="version-control">Version Control<a class="anchor" aria-label="anchor" href="#version-control"></a>
+</h2>
+<hr class="half-width">
+<p>Track changes to your data and code over time. Two complementary
+approaches:</p>
+<ul>
+<li>
+<strong>Version numbering</strong> for data files —
+<code>survey_cleaned_v1.csv</code>, <code>survey_cleaned_v2.csv</code>,
+with a changelog documenting what changed between versions</li>
+<li>
+<strong>Git / GitHub</strong> for code and documentation — tracks
+every change with a full history</li>
+</ul>
+<div id="never-overwrite-raw-data" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="never-overwrite-raw-data" class="callout-inner">
+<h3 class="callout-title">Never Overwrite Raw Data</h3>
+<div class="callout-content">
+<p>Keep your original raw data unchanged in <code>data_raw/</code>. All
+cleaning and transformation should produce new files in
+<code>data_clean/</code>. If something goes wrong, you can always start
+over from the original.</p>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="backup-the-3-2-1-rule">Backup: The 3-2-1 Rule<a class="anchor" aria-label="anchor" href="#backup-the-3-2-1-rule"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>
+<strong>3</strong> copies of your data</li>
+<li>
+<strong>2</strong> different storage types (e.g., local drive +
+cloud)</li>
+<li>
+<strong>1</strong> offsite backup</li>
+</ul>
+<p>For example: your laptop, an external hard drive, and a cloud
+service. If any one fails, you still have two copies.</p>
+<hr></section><section><h2 class="section-heading" id="fair-principles">FAIR Principles<a class="anchor" aria-label="anchor" href="#fair-principles"></a>
+</h2>
+<hr class="half-width">
+<p>The FAIR framework is the widely adopted standard for research data
+management. Curated data should be:</p>
+<ul>
+<li>
+<strong>Findable</strong> — stored in a searchable repository with a
+persistent identifier (like a DOI)</li>
+<li>
+<strong>Accessible</strong> — available to authorized users through
+standard protocols</li>
+<li>
+<strong>Interoperable</strong> — uses open formats and standard
+vocabularies so it works with other tools and datasets</li>
+<li>
+<strong>Reusable</strong> — documented thoroughly enough that
+someone else can understand and use it without contacting you</li>
+</ul>
+<p>FAIR does not mean all data must be public — it means data should be
+<em>as open as possible and as closed as necessary</em>, with clear
+access conditions.</p>
+<hr></section><section><h2 class="section-heading" id="publishing-data-institutional-repositories">Publishing Data: Institutional Repositories<a class="anchor" aria-label="anchor" href="#publishing-data-institutional-repositories"></a>
+</h2>
+<hr class="half-width">
+<p>When curated data is deposited into a repository, it receives a
+permanent identifier, becomes discoverable worldwide, and can be cited
+in publications just like a journal article.</p>
+<div class="section level3">
+<h3 id="purr-purdue-university-research-repository">PURR (Purdue University Research Repository)<a class="anchor" aria-label="anchor" href="#purr-purdue-university-research-repository"></a>
+</h3>
+<p><a href="https://purr.purdue.edu/" class="external-link">PURR</a> is Purdue University’s
+platform for publishing and preserving research data. It allows
+researchers to:</p>
+<ul>
+<li>Store curated datasets securely</li>
+<li>Assign DOIs (Digital Object Identifiers) so others can cite the
+data</li>
+<li>Share data publicly or with restricted access</li>
+<li>Meet data management requirements from funding agencies and
+journals</li>
+</ul>
+<p>Repositories like PURR protect data from loss and make it reusable
+beyond the original project. Many universities and funding agencies now
+require a data management plan that includes repository deposit.</p>
+<hr>
+</div>
+</section><section><h2 class="section-heading" id="sharing-large-datasets-globus">Sharing Large Datasets: Globus<a class="anchor" aria-label="anchor" href="#sharing-large-datasets-globus"></a>
+</h2>
+<hr class="half-width">
+<p>Some datasets — satellite imagery archives, climate model
+simulations, high-resolution remote sensing data — are too large for
+email, USB drives, or standard cloud sharing. These require dedicated
+transfer infrastructure.</p>
+<div class="section level3">
+<h3 id="what-is-globus">What Is Globus?<a class="anchor" aria-label="anchor" href="#what-is-globus"></a>
+</h3>
+<p><a href="https://www.globus.org/" class="external-link">Globus</a> is a research data
+transfer platform widely used in academia. It supports:</p>
+<ul>
+<li>Secure, high-volume transfers (terabytes between institutions)</li>
+<li>Automatic retry and verification (no babysitting long
+transfers)</li>
+<li>Scheduled and automated workflows</li>
+<li>Transfers between institutional HPC clusters, cloud storage, and
+personal machines</li>
+</ul>
+<p>For example, a researcher in Indiana can transfer 5 TB of satellite
+data to collaborators in Europe reliably and securely, without worrying
+about interrupted connections or corrupted files.</p>
+<hr>
+</div>
+</section><section><h2 class="section-heading" id="ethics-and-privacy">Ethics and Privacy<a class="anchor" aria-label="anchor" href="#ethics-and-privacy"></a>
+</h2>
+<hr class="half-width">
+<p>Research data often contains sensitive information. Before
+sharing:</p>
+<ul>
+<li>Remove personal identifiers from survey and demographic data</li>
+<li>Follow your institution’s IRB (Institutional Review Board)
+guidelines</li>
+<li>Respect licensing restrictions on data you did not collect
+yourself</li>
+<li>Consider aggregation levels carefully for geospatial data —
+fine-grained location data can expose individuals even when names are
+removed</li>
+</ul>
+<hr>
+<div id="exercise-curate-a-sample-project" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="exercise-curate-a-sample-project" class="callout-inner">
+<h3 class="callout-title">Exercise: Curate a Sample Project</h3>
+<div class="callout-content">
+<p>Create a folder structure for a hypothetical research project on
+urban heat islands in your city. Include:</p>
+<ol style="list-style-type: decimal">
+<li>A <code>data_raw/</code> folder (what files would go here?)</li>
+<li>A <code>data_clean/</code> folder</li>
+<li>A <code>scripts/</code> folder</li>
+<li>A <code>documentation/</code> folder containing a brief README (3–5
+sentences describing the project, data sources, and key variables)</li>
+</ol>
+<p>If time allows, discuss with a partner: what metadata would someone
+need to reuse your dataset five years from now?</p>
+</div>
+</div>
+</div>
+<hr>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Data curation is an ongoing process that begins when data is
+created, not after a project ends.</li>
+<li>Practical habits — clear folder structures, descriptive file names,
+README files, and open formats — are the foundation of good
+curation.</li>
+<li>The FAIR principles (Findable, Accessible, Interoperable, Reusable)
+are the standard framework for research data management.</li>
+<li>Institutional repositories like PURR provide permanent, citable
+homes for research data.</li>
+<li>Large-scale data sharing relies on tools like Globus that handle
+high-volume transfers reliably.</li>
 </ul>
 </div>
 </div>
