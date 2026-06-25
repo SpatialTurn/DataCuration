@@ -1,5 +1,5 @@
 ---
-title: "Data Curation, Sharing, and Collaboration"
+title: "Additional Readings"
 teaching: 30
 exercises: 10
 ---
