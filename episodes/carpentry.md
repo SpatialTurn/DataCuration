@@ -67,6 +67,7 @@ Use headings to structure your episodes into sections. In Carpentries lessons, `
 
 ![Alt text describing the image](image.png "Optional title")
 ```
+**Note:** The image has to be in the same folder where your episodes/modules exist. More on the episodes folder below. 
 
 ### Lists
 
@@ -170,7 +171,12 @@ The Carpentries provides an official template called the **Workbench** that gene
 Your lesson website will be built automatically and available at:
 `https://yourusername.github.io/your-repo-name/`
 
-It may take a few minutes for the first build to complete.
+In this case:
+
+1. `yourusername` - This is your *GitHub username*. 
+2. `your-repo-name` - This is your repo name. From the example above **2026-06-30-purdue-geospatial**.
+
+It may take a couple of minutes for the first build to complete.
 
 ::::::::::::::::::::::::::::::::::::: callout
 
