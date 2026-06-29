@@ -65,7 +65,7 @@ Use headings to structure your episodes into sections. In Carpentries lessons, `
 ```markdown
 [Link text](https://example.com)
 
-![Alt text describing the image](path/to/image.png "Optional title")
+![Alt text describing the image](image.png "Optional title")
 ```
 
 ### Lists
@@ -161,7 +161,8 @@ The Carpentries provides an official template called the **Workbench** that gene
 3. Fill in the details:
    - **Owner:** your GitHub username or organization
    - **Repository name:** use the Carpentries naming convention — `YYYY-MM-DD-sitename-topicname`
-     (e.g., `2026-07-15-purdue-geospatial`)
+     (e.g., `2026-06-30-purdue-geospatial`)
+   - Keep **Include all the branches** on 
    - **Visibility:** **Public** (required for GitHub Pages to work)
 
 4. Click **Create repository**
