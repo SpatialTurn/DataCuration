@@ -1,11 +1,5 @@
-# This template CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to replace its contents
-# with information about your lesson.
-# Remember to update this file periodically, 
-# ensuring that the author list and other fields remain accurate.
-
 cff-version: 1.2.0
-title: FIXME
+title: "Curating and Sharing Geospatial Data"
 message: >-
   Please cite this lesson using the information in this file
   when you refer to it in publications, and/or if you
@@ -13,10 +7,39 @@ message: >-
   training material.
 type: dataset
 authors:
-  - given-names: FIXME
-    family-names: FIXME
+  - given-names: Ian
+    family-names: Lindsay
+    affiliation: "Purdue University"
+  - given-names: Nicole
+    family-names: Kong
+    affiliation: "Purdue University"
+  - given-names: Innocensia
+    family-names: Owuor
+    affiliation: "Purdue University"
+  - given-names: Max
+    family-names: Gosch
+    affiliation: "Department of Anthropology, Purdue University"
+  - given-names: Aniket Dev
+    family-names: Roy
+    affiliation: "Purdue University Libraries and School of Information"
 abstract: >-
-  FIXME Replace this with a short abstract describing the
-  lesson, e.g. its target audience and main intended
-  learning objectives.
+  A theory-based module on curating geospatial research data so that it
+  remains understandable and reusable: the curation lifecycle, metadata
+  standards, documentation, digital preservation, sharing and publishing in
+  repositories with DOIs and licenses, the FAIR and CARE principles, and the
+  ethics of sensitive location data.
+keywords:
+  - GIS
+  - data curation
+  - metadata
+  - documentation
+  - digital preservation
+  - repositories
+  - FAIR
+  - CARE
+  - privacy
+  - social science
+repository-code: "https://github.com/SpatialTurn/datacurationmain"
+url: "https://spatialturn.github.io/datacurationmain/"
 license: CC-BY-4.0
+date-released: "2026-06-26"
