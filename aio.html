@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Lesson Title: All in One View</title>
+<title>Curating and Sharing Geospatial Data: All in One View</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="assets/themetoggle.js"></script><link rel="stylesheet" type="text/css" href="assets/styles.css">
 <script src="assets/scripts.js" type="text/javascript"></script><!-- mathjax --><!-- NOTE: https://docs.mathjax.org/en/latest/output/mathml.html#mathml-support --><!-- Changes from V2 to V4: https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html
@@ -41,15 +41,15 @@
     <div class="col-md-8">
       <div class="large-logo">
         <a href="index.html">
-        <img id="incubator-logo" alt="Lesson Description" src="assets/images/incubator-logo.svg"></a>
+        <img id="incubator-logo" alt="Curating and Sharing Geospatial Data" src="assets/images/incubator-logo.svg"></a>
 
-        <span class="badge text-bg-danger">
-          <abbr title="This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught.">
+        <span class="badge text-bg-warning">
+          <abbr title="This lesson is in the alpha phase, which means that it has been taught once and lesson authors are iterating on feedback.">
             <a href="https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html" class="external-link alert-link">
-              <i aria-hidden="true" class="icon" data-feather="alert-octagon" style="border-radius: 5px"></i>
-              Pre-Alpha
+              <i aria-hidden="true" class="icon" data-feather="alert-triangle" style="border-radius: 5px"></i>
+              Alpha
             </a>
-            <span class="visually-hidden">This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught.</span>
+            <span class="visually-hidden">This lesson is in the alpha phase, which means that it has been taught once and lesson authors are iterating on feedback.</span>
           </abbr>
         </span>
 
@@ -100,10 +100,10 @@
     </button>
     <div class="nav-logo">
       <a href="index.html">
-      <img class="small-logo" alt="Lesson Description" src="assets/images/incubator-logo-sm.svg"></a>
+      <img class="small-logo" alt="Curating and Sharing Geospatial Data" src="assets/images/incubator-logo-sm.svg"></a>
     </div>
     <div class="lesson-title-md">
-      Lesson Title
+      Curating and Sharing Geospatial Data
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
@@ -114,7 +114,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
           <span class="lesson-title">
-            Lesson Title
+            Curating and Sharing Geospatial Data
           </span>
         </li>
         <li class="nav-item">
@@ -256,7 +256,55 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="globaldata.html">2. Additional Topics</a>
+        <a href="metadata.html">2. Metadata</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="documentation.html">3. Documentation</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="preservation.html">4. Preservation</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="sharing.html">5. Sharing and Publishing Data</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="ethics.html">6. Ethics and Sensitive Location Data</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -340,9 +388,9 @@
         
 <section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction to Data Curation</a></p>
 <hr>
-<p>Last updated on 2026-06-26 |
+<p>Last updated on 2026-10-17 |
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/SpatialTurn/datacurationmain/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -354,12 +402,12 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What is data curation?</li>
-<li>Why is data curation important in data science?</li>
-<li>What are the stages of the data curation lifecycle?</li>
-<li>How does good curation improve research quality and
-reproducibility?</li>
-<li>What are common challenges in managing data?</li>
+<li>What is data curation, and how does it differ from data management
+and data cleaning?</li>
+<li>Why does curation matter for research, and for geospatial data in
+particular?</li>
+<li>What are the stages of the curation lifecycle?</li>
+<li>What do funders and federal policies now expect?</li>
 </ul>
 </div>
 </div>
@@ -369,376 +417,404 @@ reproducibility?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Define data curation and its purpose</li>
-<li>Understand the lifecycle of curated data</li>
-<li>Recognize best practices for organizing and managing datasets</li>
-<li>Identify common metadata and documentation standards</li>
-<li>Appreciate the role of data curation in reproducible science</li>
+<li>Define data curation and explain its purpose</li>
+<li>Distinguish curation from data management and data cleaning</li>
+<li>Describe the stages of the curation lifecycle</li>
+<li>Explain how public access policies and the FAIR principles shape
+curation</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="what-is-data-curation">What is Data Curation?<a class="anchor" aria-label="anchor" href="#what-is-data-curation"></a>
+<section><h2 class="section-heading" id="what-is-data-curation">What is data curation?<a class="anchor" aria-label="anchor" href="#what-is-data-curation"></a>
 </h2>
 <hr class="half-width">
-<p><strong>Data curation</strong> is the process of organizing,
-documenting, preserving, and maintaining data so that it remains useful,
-understandable, and reusable over time.</p>
-<p>It includes:</p>
+<p><strong>Data curation</strong> is the work of making data
+<strong>understandable, trustworthy and reusable over the long
+term</strong>, by people who were not involved in creating it. It
+includes:</p>
 <ul>
-<li>Cleaning and validating data</li>
-<li>Organizing files and formats</li>
-<li>Creating metadata</li>
-<li>Preserving datasets for long-term access</li>
+<li>describing data with <strong>metadata</strong> and
+<strong>documentation</strong>
+</li>
+<li>choosing formats and storage that will <strong>last</strong>
+</li>
+<li>depositing data in a <strong>repository</strong> where it can be
+found, cited and preserved</li>
+<li>deciding <strong>who may access</strong> the data and under what
+<strong>license</strong>
+</li>
+<li>protecting <strong>sensitive information</strong> before data is
+shared</li>
 </ul>
-<div id="key-idea" class="callout">
+<p>A museum curator looks after objects so that future visitors can see
+and understand them. A data curator does the same for datasets.</p>
+<div class="section level3">
+<h3 id="curation-management-and-cleaning">Curation, management and cleaning<a class="anchor" aria-label="anchor" href="#curation-management-and-cleaning"></a>
+</h3>
+<table class="table">
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead><tr>
+<th></th>
+<th>Data cleaning</th>
+<th>Data management</th>
+<th>Data curation</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Goal</td>
+<td>Correct errors in the data</td>
+<td>Keep data organized, safe and usable <strong>during</strong> a
+project</td>
+<td>Keep data understandable and reusable <strong>after</strong> the
+project, by others</td>
+</tr>
+<tr>
+<td>Typical tasks</td>
+<td>Fix typos, duplicates, missing values, invalid geometries</td>
+<td>Folders, file names, versions, backups, quality checks</td>
+<td>Metadata, documentation, preservation, repositories, licenses,
+access</td>
+</tr>
+<tr>
+<td>Time frame</td>
+<td>Days to weeks</td>
+<td>The life of the project</td>
+<td>Years to decades</td>
+</tr>
+<tr>
+<td>Main audience</td>
+<td>The analyst</td>
+<td>The project team</td>
+<td>Future users, including strangers</td>
+</tr>
+</tbody>
+</table>
+<p>The three overlap, and the <strong>Data Management</strong> module
+covers organizing, versioning and quality in detail. This module focuses
+on what happens so that data can <strong>outlive</strong> the project
+that made it.</p>
+<div id="curation-starts-on-day-one" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
-<div id="key-idea" class="callout-inner">
-<h3 class="callout-title">Key Idea</h3>
+<div id="curation-starts-on-day-one" class="callout-inner">
+<h3 class="callout-title">Curation starts on day one</h3>
 <div class="callout-content">
-<p>Data curation is not just storing files — it is making data usable
-for future analysis.</p>
+<p>Curation is often left until a project ends, when the people who
+understood the data have moved on and the details are forgotten. It is
+far easier to record where data came from, what each field means and
+what was done to it <strong>while</strong> the work happens. Think of
+curation as a habit, not a final task.</p>
 </div>
 </div>
 </div>
-<hr></section><section><h2 class="section-heading" id="why-data-curation-matters">Why Data Curation Matters<a class="anchor" aria-label="anchor" href="#why-data-curation-matters"></a>
+</div>
+</section><section><h2 class="section-heading" id="why-curation-matters">Why curation matters<a class="anchor" aria-label="anchor" href="#why-curation-matters"></a>
 </h2>
 <hr class="half-width">
-<p>Poorly curated data can lead to:</p>
+<p>Poorly curated data leads to:</p>
 <ul>
-<li>Lost files</li>
-<li>Confusing variable names</li>
-<li>Missing context</li>
-<li>Irreproducible research</li>
+<li>
+<strong>Lost data</strong>: files on a former student’s laptop, an
+expired cloud account, an unreadable format</li>
+<li>
+<strong>Lost meaning</strong>: a column called <code>pct2</code>
+that nobody can explain, or coordinates with no coordinate system</li>
+<li>
+<strong>Irreproducible results</strong>: published findings that
+cannot be checked because the exact data is gone</li>
+<li>
+<strong>Wasted effort</strong>: others collecting the same data
+again because they could not find or trust yours</li>
 </ul>
-<p>Well-curated data helps:</p>
-<ul>
-<li>Ensure reproducibility</li>
-<li>Enable collaboration</li>
-<li>Improve data quality</li>
-<li>Support long-term preservation</li>
-</ul>
+<p>Well-curated data, by contrast, can be <strong>cited</strong> (giving
+its creators credit), <strong>verified</strong>,
+<strong>combined</strong> with other data, and <strong>reused</strong>
+for questions its creators never imagined. Census data collected in
+1940, carefully preserved, is still used by historians, demographers and
+geographers today.</p>
 <div class="section level3">
-<h3 id="example">Example:<a class="anchor" aria-label="anchor" href="#example"></a>
+<h3 id="geospatial-data-adds-challenges">Geospatial data adds challenges<a class="anchor" aria-label="anchor" href="#geospatial-data-adds-challenges"></a>
 </h3>
-<p>A dataset named <code>final_data_v2_revised_REAL_final.csv</code>
-gives little confidence or clarity.</p>
-<p>A curated alternative:
-<code>soil_moisture_2025_stationA_clean.csv</code></p>
-<hr>
+<ul>
+<li>Datasets are often <strong>several files</strong> (a shapefile) or
+<strong>very large</strong> (imagery, lidar)</li>
+<li>They are meaningless without their <strong>coordinate reference
+system</strong>
+</li>
+<li>
+<strong>Boundaries change</strong> (census tracts are redrawn every
+ten years), so the <strong>date</strong> of the geography matters</li>
+<li>Formats change quickly, and some are
+<strong>proprietary</strong>
+</li>
+<li>
+<strong>Locations can identify people</strong>, so sharing needs
+particular care</li>
+</ul>
 </div>
-</section><section><h2 class="section-heading" id="the-data-curation-lifecycle">The Data Curation Lifecycle<a class="anchor" aria-label="anchor" href="#the-data-curation-lifecycle"></a>
+</section><section><h2 class="section-heading" id="the-curation-lifecycle">The curation lifecycle<a class="anchor" aria-label="anchor" href="#the-curation-lifecycle"></a>
 </h2>
 <hr class="half-width">
-<p>Data curation happens throughout the life of a dataset.</p>
+<p>The UK’s Digital Curation Centre (DCC) describes curation as a
+lifecycle. A simplified version:</p>
+<figure><img src="cur_lifecycle.png" alt="A cycle of seven boxes connected by arrows: 1 Create or receive, 2 Appraise and select, 3 Describe (metadata), 4 Ingest into a repository, 5 Preserve, 6 Provide access, 7 Reuse and transform, which leads back to Create or receive. In the center: throughout, plan, document, watch for change." class="figure mx-auto d-block"><div class="figcaption">The data curation lifecycle.</div>
+</figure><table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Stage</th>
+<th>What happens</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Create or receive</strong></td>
+<td>Data is created by a project, or received from someone else, with
+its documentation</td>
+</tr>
+<tr>
+<td><strong>Appraise and select</strong></td>
+<td>Decide which data is worth keeping long term, and which can be
+discarded</td>
+</tr>
+<tr>
+<td><strong>Describe</strong></td>
+<td>Write metadata and documentation so others can find and understand
+it</td>
+</tr>
+<tr>
+<td><strong>Ingest</strong></td>
+<td>Deposit the data and documentation in a repository or archive</td>
+</tr>
+<tr>
+<td><strong>Preserve</strong></td>
+<td>Keep it safe, readable and unchanged: checksums, backups, format
+migration</td>
+</tr>
+<tr>
+<td><strong>Provide access</strong></td>
+<td>Make it findable and available, openly or under controlled
+access</td>
+</tr>
+<tr>
+<td><strong>Reuse and transform</strong></td>
+<td>Others use the data, perhaps creating new datasets that start the
+cycle again</td>
+</tr>
+</tbody>
+</table>
+<p>Around the whole cycle run <strong>planning</strong>,
+<strong>documentation</strong>, and <strong>community watch</strong>:
+keeping an eye on new standards, formats and technologies that may
+require action.</p>
 <div class="section level3">
-<h3 id="typical-lifecycle-stages">Typical Lifecycle Stages:<a class="anchor" aria-label="anchor" href="#typical-lifecycle-stages"></a>
+<h3 id="appraisal-not-everything-needs-to-be-kept">Appraisal: not everything needs to be kept<a class="anchor" aria-label="anchor" href="#appraisal-not-everything-needs-to-be-kept"></a>
 </h3>
-<ol style="list-style-type: decimal">
-<li><strong>Create / Collect</strong></li>
-<li><strong>Organize</strong></li>
-<li><strong>Document</strong></li>
-<li><strong>Store / Backup</strong></li>
-<li><strong>Preserve</strong></li>
-<li><strong>Share / Publish</strong></li>
-<li><strong>Reuse / Reanalyze</strong></li>
-</ol>
-<div id="important" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<p>Keeping data costs money and effort. A useful set of questions for
+deciding what to curate:</p>
+<ul>
+<li>Is it the data <strong>underlying a publication</strong>, or
+required by a funder or journal?</li>
+<li>Is it <strong>unique</strong> or hard to recreate (field
+observations, historical records), or easily downloaded again (a public
+census table)?</li>
+<li>Is it likely to be <strong>useful to others</strong>?</li>
+<li>Can it be <strong>shared legally and ethically</strong>?</li>
+</ul>
+<p>For data you downloaded from a stable public source, it is often
+enough to <strong>cite</strong> the source precisely (including the
+version and date) and keep the code that processes it, rather than
+archiving another copy.</p>
 </div>
-<span class="callout-header">Callout</span>
-<div id="important" class="callout-inner">
-<h3 class="callout-title">Important</h3>
-<div class="callout-content">
-<p>Curation begins when data is created — not after the project
-ends.</p>
-</div>
-</div>
-</div>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="core-principles-of-good-data-curation">Core Principles of Good Data Curation<a class="anchor" aria-label="anchor" href="#core-principles-of-good-data-curation"></a>
+</section><section><h2 class="section-heading" id="public-access-and-fair">Public access and FAIR<a class="anchor" aria-label="anchor" href="#public-access-and-fair"></a>
 </h2>
 <hr class="half-width">
-<div class="section level3">
-<h3 id="organization">1. Organization<a class="anchor" aria-label="anchor" href="#organization"></a>
-</h3>
-<p>Use clear folder structures.</p>
-<p>Example:</p>
-<p>In your project folder:</p>
-<p>project/-</p>
-<p>You can file sub-folders with the following names:</p>
-<ol style="list-style-type: decimal">
-<li>data_raw/</li>
-<li>data_clean/</li>
-<li>scripts/</li>
-<li>outputs/</li>
-<li>documentation/</li>
-</ol>
-<p>You can for example, write scripts in a way that save the outputs in
-<code>output/</code>. This helps maintain the continuity of your
-research. One needs to keep in mind that they should be able to redo the
-process of their application of research with ease.</p>
-<hr>
-</div>
-<div class="section level3">
-<h3 id="naming-conventions">2. Naming Conventions<a class="anchor" aria-label="anchor" href="#naming-conventions"></a>
-</h3>
-<p>Good file names should be: - Descriptive - Consistent -
-Machine-readable</p>
-<p>Example: <code>river_discharge_monthly_2024.csv</code></p>
-<p>Avoid: <code>data_new_latest2.csv</code></p>
-<hr>
-</div>
-<div class="section level3">
-<h3 id="documentation">3. Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
-</h3>
-<p>Every dataset should include documentation:</p>
+<p>Expectations for sharing research data have grown quickly:</p>
 <ul>
-<li>README file</li>
-<li>Variable descriptions</li>
-<li>Units of measurement</li>
-<li>Data source notes</li>
+<li>
+<strong>Funders</strong> such as the National Science Foundation and
+the National Institutes of Health require a data management and sharing
+plan with proposals.</li>
+<li>A 2022 memorandum from the White House Office of Science and
+Technology Policy (the “Nelson memo”) directed federal agencies to make
+publications from federally funded research, <strong>and the data
+underlying them</strong>, freely available without delay, and to use
+persistent identifiers and metadata. Agencies were asked to have updated
+policies in effect by the end of 2025.</li>
+<li>Many <strong>journals</strong> ask authors to share data, or to
+state where it can be found.</li>
 </ul>
-<p>Example README includes:</p>
-<ul>
-<li>Project title</li>
-<li>Author</li>
-<li>Date created</li>
-<li>File descriptions</li>
-</ul>
-<hr>
-</div>
-<div class="section level3">
-<h3 id="metadata">4. Metadata<a class="anchor" aria-label="anchor" href="#metadata"></a>
-</h3>
-<p>Metadata = “data about data”</p>
-<p>Examples:</p>
-<ul>
-<li>Who created the dataset?</li>
-<li>When was it collected?</li>
-<li>What instruments were used?</li>
-<li>What do columns mean?</li>
-</ul>
-<div id="challenge1" class="callout challenge">
+<p>Behind these policies are the <strong>FAIR principles</strong>
+(published in 2016), which say research data should be:</p>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Principle</th>
+<th>Means</th>
+<th>In practice</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Findable</strong></td>
+<td>People and computers can discover it</td>
+<td>A persistent identifier (DOI), rich metadata, a searchable
+repository</td>
+</tr>
+<tr>
+<td><strong>Accessible</strong></td>
+<td>It can be retrieved, with clear conditions</td>
+<td>Standard web access; metadata stays available even if the data is
+restricted</td>
+</tr>
+<tr>
+<td><strong>Interoperable</strong></td>
+<td>It works with other data and tools</td>
+<td>Open formats, standard vocabularies, EPSG codes, standard
+identifiers such as GEOIDs</td>
+</tr>
+<tr>
+<td><strong>Reusable</strong></td>
+<td>Others can use it correctly</td>
+<td>A clear license, detailed documentation and provenance</td>
+</tr>
+</tbody>
+</table>
+<p>FAIR does not mean “open”: sensitive data can be FAIR with controlled
+access. The following episodes take each part of curation in turn:
+<strong>metadata</strong>, <strong>documentation</strong>,
+<strong>preservation</strong>, <strong>sharing</strong>, and
+<strong>ethics</strong>.</p>
+<div id="curation-management-or-cleaning" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="curation-management-or-cleaning" class="callout-inner">
+<h3 class="callout-title">Curation, management or cleaning?</h3>
 <div class="callout-content">
-<p>Why is metadata essential if someone else uses your dataset five
-years later?</p>
+<p>Classify each task:</p>
+<ol style="list-style-type: decimal">
+<li>Removing 12 duplicate survey responses</li>
+<li>Choosing a folder structure for a team project</li>
+<li>Writing a description of each column for a dataset going into a
+repository</li>
+<li>Converting a final dataset from a proprietary format to GeoPackage
+for archiving</li>
+<li>Setting up nightly backups of the project drive</li>
+</ol>
 </div>
 </div>
 </div>
-<hr>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li><strong>Cleaning</strong></li>
+<li><strong>Management</strong></li>
+<li>
+<strong>Curation</strong> (documentation and metadata)</li>
+<li>
+<strong>Curation</strong> (preservation), though choosing open
+formats is good management too</li>
+<li><strong>Management</strong></li>
+</ol>
+<p>The boundaries are fuzzy, and that is fine: what matters is that each
+task gets done.</p>
 </div>
-</section><section><h2 class="section-heading" id="data-cleaning-vs-data-curation">Data Cleaning vs Data Curation<a class="anchor" aria-label="anchor" href="#data-cleaning-vs-data-curation"></a>
-</h2>
-<hr class="half-width">
-<p>These are related but different:</p>
-<div class="section level3">
-<h3 id="data-cleaning">Data Cleaning:<a class="anchor" aria-label="anchor" href="#data-cleaning"></a>
-</h3>
-<p>Fixes errors in data i.e.,</p>
-<ul>
-<li>Missing values</li>
-<li>Typos</li>
-<li>Duplicates</li>
-</ul>
 </div>
-<div class="section level3">
-<h3 id="data-curation">Data Curation:<a class="anchor" aria-label="anchor" href="#data-curation"></a>
-</h3>
-<p>Maintains long-term usability.</p>
-<ul>
-<li>Documentation</li>
-<li>Preservation</li>
-<li>Versioning</li>
-</ul>
-<p>Both are necessary.</p>
-<hr>
 </div>
-</section><section><h2 class="section-heading" id="file-formats-matter">File Formats Matter<a class="anchor" aria-label="anchor" href="#file-formats-matter"></a>
-</h2>
-<hr class="half-width">
-<p>Choose formats that are:</p>
-<ul>
-<li>Open</li>
-<li>Reusable</li>
-<li>Non-proprietary</li>
-</ul>
-<p>Preferred:</p>
-<ul>
-<li>CSV instead of XLSX</li>
-<li>TXT instead of DOCX for plain text</li>
-<li>GeoJSON instead of closed GIS formats when possible</li>
-</ul>
-<hr></section><section><h2 class="section-heading" id="version-control-in-data-curation">Version Control in Data Curation<a class="anchor" aria-label="anchor" href="#version-control-in-data-curation"></a>
-</h2>
-<hr class="half-width">
-<p>Track changes to files over time.</p>
-<p>Methods:</p>
-<ul>
-<li>Version numbering (<code>v1</code>, <code>v2</code>)</li>
-<li>Git / GitHub</li>
-<li>Changelogs</li>
-</ul>
-<p>Example: <code>survey_cleaned_v3.csv</code></p>
-<div id="tip" class="callout">
+</div>
+<div id="keep-or-cite" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Callout</span>
-<div id="tip" class="callout-inner">
-<h3 class="callout-title">Tip</h3>
+<span class="callout-header">Challenge</span>
+<div id="keep-or-cite" class="callout-inner">
+<h3 class="callout-title">Keep or cite?</h3>
 <div class="callout-content">
-<p>Never overwrite original raw data.</p>
-<p>Keep raw data unchanged.</p>
+<p>At the end of a project you have: (a) county boundaries downloaded
+from the Census Bureau, (b) grocery store locations your team verified
+in the field, (c) a Python script that joins and analyzes them, and (d)
+200 maps exported while exploring the data. What would you curate and
+deposit, and what would you only cite or discard?</p>
 </div>
 </div>
 </div>
-<hr></section><section><h2 class="section-heading" id="backup-and-preservation">Backup and Preservation<a class="anchor" aria-label="anchor" href="#backup-and-preservation"></a>
-</h2>
-<hr class="half-width">
-<p>Use the 3-2-1 Rule:</p>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
 <ul>
-<li>3 copies of data</li>
-<li>2 different storage types</li>
-<li>1 offsite backup</li>
+<li>
+<strong>(a)</strong> Cite precisely (product, year, URL, date
+accessed). It is already preserved by the Census Bureau.</li>
+<li>
+<strong>(b)</strong> Curate and deposit: it is unique, and
+recreating it would mean repeating the field work.</li>
+<li>
+<strong>(c)</strong> Deposit with the data: the code documents
+exactly how results were produced.</li>
+<li>
+<strong>(d)</strong> Keep only the maps used in publications;
+exploratory maps can be regenerated from (a) to (c).</li>
 </ul>
-<p>Example:</p>
-<ul>
-<li>Local computer</li>
-<li>External drive</li>
-<li>Cloud storage</li>
-</ul>
-<hr></section><section><h2 class="section-heading" id="fair-principles">FAIR Principles<a class="anchor" aria-label="anchor" href="#fair-principles"></a>
-</h2>
-<hr class="half-width">
-<p>Good curated data should be:</p>
-<div class="section level3">
-<h3 id="f-findable">F — Findable<a class="anchor" aria-label="anchor" href="#f-findable"></a>
-</h3>
-<p>Easy to locate</p>
 </div>
-<div class="section level3">
-<h3 id="a-accessible">A — Accessible<a class="anchor" aria-label="anchor" href="#a-accessible"></a>
-</h3>
-<p>Available to authorized users</p>
 </div>
-<div class="section level3">
-<h3 id="i-interoperable">I — Interoperable<a class="anchor" aria-label="anchor" href="#i-interoperable"></a>
-</h3>
-<p>Compatible with other systems</p>
 </div>
-<div class="section level3">
-<h3 id="r-reusable">R — Reusable<a class="anchor" aria-label="anchor" href="#r-reusable"></a>
-</h3>
-<p>Well-documented and understandable</p>
-<div id="fair-data-better-science" class="callout">
+</div>
+<div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<i class="callout-icon" data-feather="key"></i>
 </div>
-<span class="callout-header">Callout</span>
-<div id="fair-data-better-science" class="callout-inner">
-<h3 class="callout-title">FAIR Data = Better Science</h3>
-<div class="callout-content">
-<p>The FAIR framework is widely used in research data management.</p>
-</div>
-</div>
-</div>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="common-challenges-in-data-curation">Common Challenges in Data Curation<a class="anchor" aria-label="anchor" href="#common-challenges-in-data-curation"></a>
-</h2>
-<hr class="half-width">
-<ul>
-<li>Inconsistent naming</li>
-<li>Missing metadata</li>
-<li>Lost context over time</li>
-<li>Proprietary formats</li>
-<li>Lack of backup</li>
-</ul>
-<hr></section><section><h2 class="section-heading" id="real-world-example">Real-World Example<a class="anchor" aria-label="anchor" href="#real-world-example"></a>
-</h2>
-<hr class="half-width">
-<p>Imagine sharing a climate dataset without:</p>
-<ul>
-<li>Units</li>
-<li>Dates</li>
-<li>Sensor details</li>
-</ul>
-<p>Even accurate data becomes nearly useless without context.</p>
-<hr></section><section><h2 class="section-heading" id="hands-on-exercise">Hands-On Exercise<a class="anchor" aria-label="anchor" href="#hands-on-exercise"></a>
-</h2>
-<hr class="half-width">
-<div class="section level3">
-<h3 id="task">Task:<a class="anchor" aria-label="anchor" href="#task"></a>
-</h3>
-<p>Create a curated folder structure for a sample project.</p>
-<p>Include:</p>
-<ul>
-<li>Raw data folder</li>
-<li>Clean data folder</li>
-<li>README file</li>
-<li>Metadata sheet</li>
-</ul>
-<p>Tip: You can check our GitHub page on how we handled our data.</p>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="accessibility-and-ethics-in-data-curation">Accessibility and Ethics in Data Curation<a class="anchor" aria-label="anchor" href="#accessibility-and-ethics-in-data-curation"></a>
-</h2>
-<hr class="half-width">
-<p>Remember:</p>
-<ul>
-<li>Protect sensitive data</li>
-<li>Remove personal identifiers</li>
-<li>Follow privacy guidelines</li>
-<li>Respect licensing restrictions</li>
-</ul>
-<hr></section><section><h2 class="section-heading" id="final-takeaways">Final Takeaways<a class="anchor" aria-label="anchor" href="#final-takeaways"></a>
-</h2>
-<hr class="half-width">
-<p>Good data curation:</p>
-<ul>
-<li>Saves time later</li>
-<li>Prevents mistakes</li>
-<li>Improves collaboration</li>
-<li>Makes research reproducible</li>
-</ul>
-<div id="discussion1" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<span class="callout-header">Discussion</span>
+<span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>Have you ever struggled with poorly organized data?</li>
-<li>What curation practice would improve your current workflow
-most?</li>
+<li>Data curation makes data understandable, trustworthy and reusable
+over the long term by people outside the project</li>
+<li>Curation complements data management (during the project) and data
+cleaning (fixing errors)</li>
+<li>The curation lifecycle runs from creation through appraisal,
+description, ingest, preservation, access and reuse</li>
+<li>Funders and federal policy increasingly require data underlying
+publications to be shared</li>
+<li>FAIR data is findable, accessible, interoperable and reusable, which
+does not always mean open</li>
 </ul>
 </div>
 </div>
 </div>
 <!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section><section id="aio-globaldata"><p>Content from <a href="globaldata.html">Additional Topics</a></p>
+Links listed here can be reused across pages as [text][name].
+Add reference-style links below as needed.
+-->
+</section></section><section id="aio-metadata"><p>Content from <a href="metadata.html">Metadata</a></p>
 <hr>
-<p>Last updated on 2026-06-26 |
+<p>Last updated on 2026-10-17 |
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/globaldata.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/SpatialTurn/datacurationmain/edit/main/episodes/metadata.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -750,11 +826,11 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What happens after data is created?</li>
-<li>How do institutions manage research data repositories?</li>
-<li>What is PURR and how does it support data curation?</li>
-<li>How is large-scale data transferred and preserved globally?</li>
-<li>What challenges arise when curating very large datasets?</li>
+<li>What is metadata, and what kinds are there?</li>
+<li>What should a metadata record for a geospatial dataset include?</li>
+<li>Which metadata standards are used for geospatial and social science
+data?</li>
+<li>How can I create metadata in QGIS?</li>
 </ul>
 </div>
 </div>
@@ -764,262 +840,1956 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explore advanced topics in data curation</li>
-<li>Understand institutional repositories such as PURR</li>
-<li>Learn how large datasets are stored and transferred</li>
-<li>Recognize challenges in global-scale research data management</li>
-<li>Connect local data practices to international infrastructure</li>
+<li>Define metadata and distinguish descriptive, administrative,
+structural and technical metadata</li>
+<li>List the essential elements of geospatial metadata</li>
+<li>Recognize the main metadata standards and when each is used</li>
+<li>Write a basic metadata record for a dataset</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="beyond-basic-data-curation">Beyond Basic Data Curation<a class="anchor" aria-label="anchor" href="#beyond-basic-data-curation"></a>
+<section><h2 class="section-heading" id="data-about-data">Data about data<a class="anchor" aria-label="anchor" href="#data-about-data"></a>
 </h2>
 <hr class="half-width">
-<p>Data curation does not stop at organizing files on your computer.</p>
-<p>As projects grow larger, data must often be:</p>
-<ul>
-<li>Shared across institutions</li>
-<li>Archived in repositories</li>
-<li>Transferred across countries</li>
-<li>Managed in cloud environments</li>
-</ul>
-<p>Modern data science depends on scalable curation systems.</p>
-<hr></section><section><h2 class="section-heading" id="data-generation-where-data-begins">1. Data Generation: Where Data Begins<a class="anchor" aria-label="anchor" href="#data-generation-where-data-begins"></a>
+<p><strong>Metadata</strong> is structured information that describes a
+dataset. It answers the questions a stranger would ask before using your
+data: <em>What is it? Who made it? When and where does it describe? How
+was it made? How accurate is it? Can I use it, and how do I cite
+it?</em></p>
+<p>Imagine finding a file called <code>stores.gpkg</code> with 64 points
+and no description. Are they grocery stores or hardware stores? Verified
+or guessed? From 2015 or 2026? Without metadata, even accurate data is
+close to useless, and it cannot be found by searching a catalog.</p>
+</section><section><h2 class="section-heading" id="kinds-of-metadata">Kinds of metadata<a class="anchor" aria-label="anchor" href="#kinds-of-metadata"></a>
 </h2>
 <hr class="half-width">
-<p>Before curation begins, data must first be generated.</p>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Kind</th>
+<th>Describes</th>
+<th>Examples</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Descriptive</strong></td>
+<td>What the data is, so it can be found and understood</td>
+<td>Title, abstract, keywords, creator, subject, spatial and temporal
+coverage</td>
+</tr>
+<tr>
+<td><strong>Administrative</strong></td>
+<td>How it can be managed and used</td>
+<td>License and rights, access restrictions, contact, funding,
+<strong>provenance</strong>
+</td>
+</tr>
+<tr>
+<td><strong>Structural</strong></td>
+<td>How it is organized</td>
+<td>Files and how they relate, layers in a GeoPackage, tables and
+keys</td>
+</tr>
+<tr>
+<td><strong>Technical</strong></td>
+<td>How it is encoded</td>
+<td>File format, size, coordinate reference system, resolution, software
+used</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Provenance</strong> (or <strong>lineage</strong>) deserves
+special mention: the record of where data came from and every process
+applied to it. It is what allows others to judge quality and reproduce
+results.</p>
+</section><section><h2 class="section-heading" id="what-geospatial-metadata-should-include">What geospatial metadata should include<a class="anchor" aria-label="anchor" href="#what-geospatial-metadata-should-include"></a>
+</h2>
+<hr class="half-width">
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Element</th>
+<th>Example for the grocery store dataset</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Title</strong></td>
+<td>Grocery and food stores, Lafayette and West Lafayette, Indiana,
+2026</td>
+</tr>
+<tr>
+<td><strong>Abstract</strong></td>
+<td>What the data contains, why it was created and how it can be
+used</td>
+</tr>
+<tr>
+<td><strong>Keywords</strong></td>
+<td>food access, grocery stores, SNAP, Indiana, Tippecanoe County</td>
+</tr>
+<tr>
+<td><strong>Creator and contact</strong></td>
+<td>Names, affiliation and an email or ORCID</td>
+</tr>
+<tr>
+<td><strong>Spatial extent</strong></td>
+<td>A bounding box: west -86.97, east -86.77, south 40.35, north
+40.50</td>
+</tr>
+<tr>
+<td><strong>Temporal extent</strong></td>
+<td>The period the data describes: October 2026</td>
+</tr>
+<tr>
+<td><strong>Coordinate reference system</strong></td>
+<td>EPSG:4326 (WGS 84)</td>
+</tr>
+<tr>
+<td><strong>Scale or resolution</strong></td>
+<td>Positional accuracy about 5 to 10 m</td>
+</tr>
+<tr>
+<td><strong>Lineage</strong></td>
+<td>Downloaded from OpenStreetMap on a stated date; filtered to food
+stores; cleaned in QGIS; spot-checked in the field</td>
+</tr>
+<tr>
+<td><strong>Attribute information</strong></td>
+<td>Each field, its meaning, type and allowed values (or a link to the
+data dictionary)</td>
+</tr>
+<tr>
+<td><strong>Data quality</strong></td>
+<td>Completeness, known gaps and how it was checked</td>
+</tr>
+<tr>
+<td><strong>License and constraints</strong></td>
+<td>Open Database License (because it derives from OpenStreetMap)</td>
+</tr>
+<tr>
+<td><strong>Distribution</strong></td>
+<td>Where and in which formats it can be obtained; a DOI if
+published</td>
+</tr>
+<tr>
+<td><strong>Metadata date</strong></td>
+<td>When the metadata itself was written or updated</td>
+</tr>
+</tbody>
+</table></section><section><h2 class="section-heading" id="metadata-standards">Metadata standards<a class="anchor" aria-label="anchor" href="#metadata-standards"></a>
+</h2>
+<hr class="half-width">
+<p>A <strong>metadata standard</strong> defines which elements to
+record, what they are called and how they are encoded, so that catalogs
+and software can read metadata from many sources.</p>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Standard</th>
+<th>Used for</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+<strong>ISO 19115</strong> (19115-1 content, with XML encoding in
+19115-3)</td>
+<td>Geospatial data worldwide</td>
+<td>The main international standard; endorsed by the U.S. Federal
+Geographic Data Committee (FGDC) in 2016</td>
+</tr>
+<tr>
+<td><strong>FGDC CSDGM</strong></td>
+<td>U.S. geospatial data, especially older federal data</td>
+<td>The former U.S. standard; still widely found, now maintained as a
+legacy standard while agencies move to ISO</td>
+</tr>
+<tr>
+<td><strong>ISO 19110</strong></td>
+<td>Feature catalogs</td>
+<td>Describes the feature types and attributes of a dataset (a formal
+data dictionary)</td>
+</tr>
+<tr>
+<td><strong>Dublin Core</strong></td>
+<td>General resources of any kind</td>
+<td>Fifteen simple elements (title, creator, date, coverage, rights…);
+used by many library and repository systems</td>
+</tr>
+<tr>
+<td><strong>DataCite Metadata Schema</strong></td>
+<td>Datasets with DOIs</td>
+<td>The metadata registered whenever a DOI is minted; required by
+repositories such as PURR and Zenodo</td>
+</tr>
+<tr>
+<td>
+<strong>DDI</strong> (Data Documentation Initiative)</td>
+<td>Social science surveys and statistical data</td>
+<td>Used by ICPSR and many statistical agencies; describes variables,
+questions and samples in detail</td>
+</tr>
+<tr>
+<td>
+<strong>STAC</strong> (SpatioTemporal Asset Catalog)</td>
+<td>Satellite imagery and other geospatial “assets”</td>
+<td>A modern JSON-based specification for searchable imagery
+catalogs</td>
+</tr>
+</tbody>
+</table>
+<p>You rarely write these formats by hand. Repositories ask for metadata
+through web forms and convert it to standard formats, and GIS software
+has metadata editors.</p>
 <div class="section level3">
-<h3 id="common-sources-of-data">Common sources of data:<a class="anchor" aria-label="anchor" href="#common-sources-of-data"></a>
+<h3 id="controlled-vocabularies">Controlled vocabularies<a class="anchor" aria-label="anchor" href="#controlled-vocabularies"></a>
 </h3>
-<ul>
-<li>Scientific instruments (sensors, satellites, microscopes)</li>
-<li>Surveys and questionnaires</li>
-<li>Field observations</li>
-<li>Simulations and computational models</li>
-<li>Web APIs and streaming platforms</li>
-</ul>
+<p>Free-text keywords vary (“food desert”, “food deserts”, “food
+access”), which makes searching unreliable. <strong>Controlled
+vocabularies</strong> provide agreed terms: for example the ISO 19115
+topic categories (such as “society”, “health” or “transportation”), the
+Library of Congress Subject Headings, or place names from GeoNames. Use
+them where a repository or standard asks for them.</p>
 </div>
-<div class="section level3">
-<h3 id="example">Example:<a class="anchor" aria-label="anchor" href="#example"></a>
-</h3>
-<p>A weather station may generate:</p>
-<ul>
-<li>Temperature every minute</li>
-<li>Humidity every hour</li>
-<li>Rainfall every day</li>
-</ul>
-<div id="important" class="callout">
+</section><section><h2 class="section-heading" id="creating-metadata-in-qgis">Creating metadata in QGIS<a class="anchor" aria-label="anchor" href="#creating-metadata-in-qgis"></a>
+</h2>
+<hr class="half-width">
+<p>QGIS has a built-in metadata editor based on ISO 19115:</p>
+<ol style="list-style-type: decimal">
+<li>Right-click a layer and choose <strong>Properties</strong>, then
+open the <strong>Metadata</strong> tab.</li>
+<li>Fill in <strong>Identification</strong> (title, abstract, type and
+language), <strong>Categories</strong> and <strong>Keywords</strong>,
+<strong>Access</strong> (license, rights, constraints),
+<strong>Extent</strong> (spatial and temporal),
+<strong>Contact</strong>, <strong>Links</strong> and
+<strong>History</strong> (lineage).</li>
+<li>Save it: the metadata can be stored next to the layer as a
+<code>.qmd</code> file or, for a GeoPackage layer, inside the
+GeoPackage, so it travels with the data.</li>
+</ol>
+<p>Projects have metadata too, under <strong>Project &gt; Properties
+&gt; Metadata</strong>.</p>
+<div id="metadata-for-downloaded-data" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
-<div id="important" class="callout-inner">
-<h3 class="callout-title">Important</h3>
+<div id="metadata-for-downloaded-data" class="callout-inner">
+<h3 class="callout-title">Metadata for downloaded data</h3>
 <div class="callout-content">
-<p>The way data is generated affects how it should be curated later.</p>
+<p>When you download data, <strong>save its metadata</strong> at the
+same time (most portals offer an XML or PDF file) and note the date, the
+URL and the version. Sources change: the Census Bureau releases new
+TIGER/Line files every year, and OpenStreetMap changes every minute.</p>
 </div>
 </div>
 </div>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="institutional-repositories-example-of-purr">2. Institutional Repositories: Example of PURR<a class="anchor" aria-label="anchor" href="#institutional-repositories-example-of-purr"></a>
-</h2>
-<hr class="half-width">
-<div class="section level3">
-<h3 id="what-is-purr">What is PURR?<a class="anchor" aria-label="anchor" href="#what-is-purr"></a>
-</h3>
-<p><strong>PURR (Purdue University Research Repository)</strong> is
-Purdue University’s platform for:</p>
-<ul>
-<li>Publishing datasets</li>
-<li>Preserving research outputs</li>
-<li>Sharing reproducible workflows</li>
-</ul>
-<p>You can find the website <a href="https://purr.purdue.edu/" class="external-link">here</a>.</p>
-<p>PURR helps researchers:</p>
-<ul>
-<li>Store curated datasets securely</li>
-<li>Assign DOIs (Digital Object Identifiers)</li>
-<li>Share data publicly or privately</li>
-<li>Meet grant and publication requirements</li>
-</ul>
-</div>
-<div class="section level3">
-<h3 id="why-repositories-matter">Why repositories matter:<a class="anchor" aria-label="anchor" href="#why-repositories-matter"></a>
-</h3>
-<p>Repositories protect data from loss and make it reusable beyond the
-original project.</p>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="data-publishing-and-doi-assignment">3. Data Publishing and DOI Assignment<a class="anchor" aria-label="anchor" href="#data-publishing-and-doi-assignment"></a>
-</h2>
-<hr class="half-width">
-<p>When curated data is deposited into repositories like PURR:</p>
-<ul>
-<li>It receives permanent identifiers</li>
-<li>Others can cite it in publications</li>
-<li>It becomes discoverable worldwide</li>
-</ul>
-<p>Example citation: &gt; Smith et al. (2025). Soil Moisture Data for
-Indiana Watersheds.</p>
-<p>This turns datasets into scholarly products.</p>
-<hr></section><section><h2 class="section-heading" id="large-scale-cloud-data-transfer">4. Large-Scale Cloud Data Transfer<a class="anchor" aria-label="anchor" href="#large-scale-cloud-data-transfer"></a>
-</h2>
-<hr class="half-width">
-<p>Some datasets are too large for email, USB drives, or local
-sharing.</p>
-<p>Examples:</p>
-<ul>
-<li>Satellite imagery archives</li>
-<li>Climate model simulations</li>
-<li>Genomics databases</li>
-<li>High-resolution remote sensing data</li>
-</ul>
-<p>These often require:</p>
-<ul>
-<li>Cloud platforms</li>
-<li>Distributed storage systems</li>
-<li>High-speed transfer protocols</li>
-</ul>
-<hr></section><section><h2 class="section-heading" id="global-data-transfer-systems">5. Global Data Transfer Systems<a class="anchor" aria-label="anchor" href="#global-data-transfer-systems"></a>
-</h2>
-<hr class="half-width">
-<p>Large-scale research often uses tools such as:</p>
-<div class="section level3">
-<h3 id="globus">Globus<a class="anchor" aria-label="anchor" href="#globus"></a>
-</h3>
-<p>Find it <a href="https://www.globus.org/" class="external-link">here</a>.</p>
-<p>Globus is widely used for:</p>
-<ul>
-<li>Secure high-volume data transfer</li>
-<li>Moving terabytes between institutions</li>
-<li>Automating research workflows</li>
-</ul>
-<p>Example: A researcher in Indiana transfers 5 TB of satellite data to
-collaborators in Europe.</p>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="cloud-storage-and-distributed-infrastructure">6. Cloud Storage and Distributed Infrastructure<a class="anchor" aria-label="anchor" href="#cloud-storage-and-distributed-infrastructure"></a>
-</h2>
-<hr class="half-width">
-<p>Modern curated datasets may live in:</p>
-<ul>
-<li>Amazon S3</li>
-<li>Google Cloud Storage</li>
-<li>Microsoft Azure</li>
-<li>Institutional HPC clusters</li>
-</ul>
-<p>These systems support:</p>
-<ul>
-<li>Redundancy</li>
-<li>Backup replication</li>
-<li>Global accessibility</li>
-</ul>
-<hr></section><section><h2 class="section-heading" id="challenges-of-big-data-curation">7. Challenges of Big Data Curation<a class="anchor" aria-label="anchor" href="#challenges-of-big-data-curation"></a>
-</h2>
-<hr class="half-width">
-<p>Large-scale datasets introduce new problems:</p>
-<div class="section level3">
-<h3 id="storage-costs">Storage Costs<a class="anchor" aria-label="anchor" href="#storage-costs"></a>
-</h3>
-<p>Huge datasets require expensive infrastructure.</p>
-</div>
-<div class="section level3">
-<h3 id="transfer-speed">Transfer Speed<a class="anchor" aria-label="anchor" href="#transfer-speed"></a>
-</h3>
-<p>Slow internet limits movement of terabytes.</p>
-</div>
-<div class="section level3">
-<h3 id="metadata-complexity">Metadata Complexity<a class="anchor" aria-label="anchor" href="#metadata-complexity"></a>
-</h3>
-<p>Larger systems require richer documentation.</p>
-</div>
-<div class="section level3">
-<h3 id="preservation-risk">Preservation Risk<a class="anchor" aria-label="anchor" href="#preservation-risk"></a>
-</h3>
-<p>Formats may become obsolete over decades.</p>
-<div id="challenge1" class="callout challenge">
+<div id="what-is-missing" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="what-is-missing" class="callout-inner">
+<h3 class="callout-title">What is missing?</h3>
 <div class="callout-content">
-<p>Why might a 100 TB climate archive require different curation
-strategies than a 10 MB CSV file?</p>
+<p>A dataset in a repository has this metadata:</p>
+<blockquote>
+<p><strong>Title:</strong> Bus stops <strong>Creator:</strong> J. Smith
+<strong>Format:</strong> Shapefile <strong>Description:</strong> Bus
+stops with amenities.</p>
+</blockquote>
+<p>List at least five important pieces of information that are
+missing.</p>
 </div>
 </div>
 </div>
-<hr>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<ul>
+<li>
+<strong>Where</strong>: which city or region (a spatial extent)</li>
+<li>
+<strong>When</strong>: the date of the data, not just of the
+upload</li>
+<li><strong>Coordinate reference system</strong></li>
+<li>
+<strong>Lineage</strong>: how the stops were mapped (field survey,
+transit agency data, imagery) and processed</li>
+<li>
+<strong>Attribute information</strong>: what the amenity fields mean
+and their allowed values</li>
+<li>
+<strong>Quality</strong>: positional accuracy and completeness</li>
+<li>
+<strong>License</strong> and any access constraints</li>
+<li>
+<strong>Contact</strong> details, affiliation, and a persistent
+identifier for citation</li>
+<li>A more specific <strong>title</strong>: “Bus stops and amenities,
+Lafayette, Indiana, 2026”</li>
+</ul>
 </div>
-</section><section><h2 class="section-heading" id="data-lifecycle-at-global-scale">8. Data Lifecycle at Global Scale<a class="anchor" aria-label="anchor" href="#data-lifecycle-at-global-scale"></a>
-</h2>
-<hr class="half-width">
-<p>For large collaborative projects:</p>
-<p>Generate → Process → Curate → Store → Transfer → Archive → Reuse</p>
-<p>Unlike small projects, this cycle may involve:</p>
-<ul>
-<li>Multiple countries</li>
-<li>Multiple institutions</li>
-<li>Automated pipelines</li>
-</ul>
-<hr></section><section><h2 class="section-heading" id="reproducibility-in-shared-infrastructure">9. Reproducibility in Shared Infrastructure<a class="anchor" aria-label="anchor" href="#reproducibility-in-shared-infrastructure"></a>
-</h2>
-<hr class="half-width">
-<p>When sharing globally:</p>
-<ul>
-<li>File formats must be standardized</li>
-<li>Metadata must be machine-readable</li>
-<li>Access permissions must be managed carefully</li>
-</ul>
-<p>Example standards:</p>
-<ul>
-<li>NetCDF for climate data</li>
-<li>HDF5 for scientific arrays</li>
-<li>JSON metadata schemas</li>
-</ul>
-<hr></section><section><h2 class="section-heading" id="future-of-data-curation">10. Future of Data Curation<a class="anchor" aria-label="anchor" href="#future-of-data-curation"></a>
-</h2>
-<hr class="half-width">
-<p>Emerging trends include:</p>
-<ul>
-<li>AI-assisted metadata generation</li>
-<li>Automated cloud archiving</li>
-<li>FAIR-compliant repositories</li>
-<li>Real-time streaming curation pipelines</li>
-</ul>
-<hr></section><section><h2 class="section-heading" id="final-takeaways">Final Takeaways<a class="anchor" aria-label="anchor" href="#final-takeaways"></a>
-</h2>
-<hr class="half-width">
-<p>Data curation today extends far beyond local folders:</p>
-<ul>
-<li>Institutions use repositories like PURR</li>
-<li>Large datasets require cloud infrastructure</li>
-<li>Global collaboration depends on scalable transfer systems</li>
-</ul>
-<div id="discussion1" class="callout discussion">
+</div>
+</div>
+</div>
+<div id="which-standard" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Discussion</span>
+<span class="callout-header">Challenge</span>
+<div id="which-standard" class="callout-inner">
+<h3 class="callout-title">Which standard?</h3>
+<div class="callout-content">
+<p>Which metadata standard would you most likely meet in each
+situation?</p>
+<ol style="list-style-type: decimal">
+<li>Publishing a dataset with a DOI in Purdue’s repository</li>
+<li>Archiving a national household survey with hundreds of
+questions</li>
+<li>Describing a statewide land cover layer for a state GIS
+clearinghouse</li>
+<li>Building a searchable catalog of drone images</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>
+<strong>DataCite</strong> (the repository’s form produces DataCite
+metadata for the DOI)</li>
+<li>
+<strong>DDI</strong>, used by ICPSR and statistical agencies</li>
+<li>
+<strong>ISO 19115</strong> (or the older FGDC CSDGM, which many
+state clearinghouses still use)</li>
+<li><strong>STAC</strong></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>What kinds of projects require cloud-scale curation?</li>
-<li>How might your own research data eventually outgrow local
-storage?</li>
+<li>Metadata is structured information that lets others find,
+understand, judge and cite a dataset</li>
+<li>Metadata can be descriptive, administrative, structural or
+technical; provenance records where data came from and what was done to
+it</li>
+<li>Geospatial metadata must include the spatial and temporal extent,
+coordinate reference system, resolution or accuracy, lineage and
+license</li>
+<li>ISO 19115 is the main geospatial standard; DataCite, Dublin Core,
+DDI and STAC serve other needs</li>
+<li>QGIS has an ISO-based metadata editor; save the metadata with the
+data</li>
 </ul>
 </div>
 </div>
 </div>
 <!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
+Links listed here can be reused across pages as [text][name].
+Add reference-style links below as needed.
+-->
+</section></section><section id="aio-documentation"><p>Content from <a href="documentation.html">Documentation</a></p>
+<hr>
+<p>Last updated on 2026-10-17 |
+
+        <a href="https://github.com/SpatialTurn/datacurationmain/edit/main/episodes/documentation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What documentation should accompany a dataset?</li>
+<li>What goes in a README file?</li>
+<li>How do I document variables, sources and processing steps?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Write a README file for a geospatial dataset</li>
+<li>Document variables in a codebook or data dictionary</li>
+<li>Record provenance: sources, processing steps and software</li>
+<li>Explain how to cite the data you use</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="metadata-and-documentation">Metadata and documentation<a class="anchor" aria-label="anchor" href="#metadata-and-documentation"></a>
+</h2>
+<hr class="half-width">
+<p><strong>Metadata</strong> (the previous episode) is structured and
+short, so that catalogs and search engines can read it.
+<strong>Documentation</strong> is the fuller, human-readable explanation
+that lets someone actually <em>use</em> the data: how it was collected,
+what every variable means, what was done to it, and what to watch out
+for.</p>
+<p>A well-documented dataset usually has:</p>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Document</th>
+<th>Answers</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>README</strong></td>
+<td>What is this, who made it, how is it organized, and how do I use and
+cite it?</td>
+</tr>
+<tr>
+<td><strong>Data dictionary or codebook</strong></td>
+<td>What does each field mean, in what units, with what allowed
+values?</td>
+</tr>
+<tr>
+<td><strong>Methods and provenance notes</strong></td>
+<td>How was the data collected and processed, step by step?</td>
+</tr>
+<tr>
+<td><strong>Code</strong></td>
+<td>Exactly how outputs were produced from inputs</td>
+</tr>
+<tr>
+<td><strong>License</strong></td>
+<td>What others may do with it</td>
+</tr>
+</tbody>
+</table></section><section><h2 class="section-heading" id="the-readme-file">The README file<a class="anchor" aria-label="anchor" href="#the-readme-file"></a>
+</h2>
+<hr class="half-width">
+<p>A <strong>README</strong> is a plain-text file (often
+<code>README.md</code> or <code>README.txt</code>) at the top level of a
+dataset. It is the first thing anyone opens. Write it as if for a
+capable stranger who knows nothing about your project.</p>
+<p>A template for a geospatial dataset:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="fu"># Grocery and Food Stores, Lafayette and West Lafayette, Indiana, 2026</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a><span class="fu">## Overview</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1" aria-label="code-block-1-4"></a>Point locations of 64 grocery and food stores, compiled to study food access.</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1" aria-label="code-block-1-5"></a>Created by: A. Researcher (Purdue University), ORCID 0000-0000-0000-0000</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1" aria-label="code-block-1-6"></a>Contact: a.researcher@example.edu</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1" aria-label="code-block-1-7"></a>Date of data: October 2026. Date of this version: 2026-11-01 (version 1.0)</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1" aria-label="code-block-1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1" aria-label="code-block-1-9"></a><span class="fu">## Files</span></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1" aria-label="code-block-1-10"></a><span class="ss">- </span>grocery_stores.gpkg    the store points (layer: grocery_stores)</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1" aria-label="code-block-1-11"></a><span class="ss">- </span>data_dictionary.csv    description of every field</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1" aria-label="code-block-1-12"></a><span class="ss">- </span>methods.md             collection and processing steps</span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1" aria-label="code-block-1-13"></a><span class="ss">- </span>LICENSE.txt            Open Database License (ODbL) 1.0</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1" aria-label="code-block-1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1" aria-label="code-block-1-15"></a><span class="fu">## Coordinate reference system</span></span>
+<span id="cb1-16"><a href="#cb1-16" tabindex="-1" aria-label="code-block-1-16"></a>EPSG:4326 (WGS 84, latitude and longitude)</span>
+<span id="cb1-17"><a href="#cb1-17" tabindex="-1" aria-label="code-block-1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18" tabindex="-1" aria-label="code-block-1-18"></a><span class="fu">## Sources</span></span>
+<span id="cb1-19"><a href="#cb1-19" tabindex="-1" aria-label="code-block-1-19"></a>Store locations: (c) OpenStreetMap contributors, downloaded 2026-10-17 via the Overpass API.</span>
+<span id="cb1-20"><a href="#cb1-20" tabindex="-1" aria-label="code-block-1-20"></a>City limits: U.S. Census Bureau, 2024 cartographic boundary files (places).</span>
+<span id="cb1-21"><a href="#cb1-21" tabindex="-1" aria-label="code-block-1-21"></a></span>
+<span id="cb1-22"><a href="#cb1-22" tabindex="-1" aria-label="code-block-1-22"></a><span class="fu">## Methods (summary)</span></span>
+<span id="cb1-23"><a href="#cb1-23" tabindex="-1" aria-label="code-block-1-23"></a>Food stores were extracted from OpenStreetMap; 12 were verified in the field in</span>
+<span id="cb1-24"><a href="#cb1-24" tabindex="-1" aria-label="code-block-1-24"></a>March 2026. See methods.md for details.</span>
+<span id="cb1-25"><a href="#cb1-25" tabindex="-1" aria-label="code-block-1-25"></a></span>
+<span id="cb1-26"><a href="#cb1-26" tabindex="-1" aria-label="code-block-1-26"></a><span class="fu">## Known limitations</span></span>
+<span id="cb1-27"><a href="#cb1-27" tabindex="-1" aria-label="code-block-1-27"></a>Not all stores were field verified. Small or new stores may be missing.</span>
+<span id="cb1-28"><a href="#cb1-28" tabindex="-1" aria-label="code-block-1-28"></a></span>
+<span id="cb1-29"><a href="#cb1-29" tabindex="-1" aria-label="code-block-1-29"></a><span class="fu">## How to cite</span></span>
+<span id="cb1-30"><a href="#cb1-30" tabindex="-1" aria-label="code-block-1-30"></a>Researcher, A. (2026). Grocery and Food Stores, Lafayette and West Lafayette,</span>
+<span id="cb1-31"><a href="#cb1-31" tabindex="-1" aria-label="code-block-1-31"></a>Indiana, 2026 (Version 1.0) <span class="co">[</span><span class="ot">Data set</span><span class="co">]</span>. Purdue University Research Repository.</span>
+<span id="cb1-32"><a href="#cb1-32" tabindex="-1" aria-label="code-block-1-32"></a>https://doi.org/10.xxxx/xxxxx</span>
+<span id="cb1-33"><a href="#cb1-33" tabindex="-1" aria-label="code-block-1-33"></a></span>
+<span id="cb1-34"><a href="#cb1-34" tabindex="-1" aria-label="code-block-1-34"></a><span class="fu">## License</span></span>
+<span id="cb1-35"><a href="#cb1-35" tabindex="-1" aria-label="code-block-1-35"></a>Open Database License (ODbL) 1.0, because the data derives from OpenStreetMap.</span></code></pre>
+</div>
+<p>Keep it current: a README that describes an old version of the data
+is worse than none.</p>
+</section><section><h2 class="section-heading" id="codebooks-and-data-dictionaries">Codebooks and data dictionaries<a class="anchor" aria-label="anchor" href="#codebooks-and-data-dictionaries"></a>
+</h2>
+<hr class="half-width">
+<p>A <strong>codebook</strong> (the usual term for survey data) or
+<strong>data dictionary</strong> (the usual term in GIS and databases)
+describes every variable. For each one, record:</p>
+<ul>
+<li>the <strong>name</strong> exactly as it appears in the file</li>
+<li>a <strong>label</strong> or description in plain language</li>
+<li>the <strong>type</strong> (text, integer, decimal, date)</li>
+<li>
+<strong>units</strong> (meters, dollars, percent) and, for money,
+the year of the dollars</li>
+<li>
+<strong>allowed values</strong> and what each code means
+(<code>1 = Yes</code>, <code>2 = No</code>,
+<code>9 = Not asked</code>)</li>
+<li>how <strong>missing values</strong> are coded and why they
+occur</li>
+<li>the <strong>source</strong> of the variable, especially if it was
+calculated or came from another dataset</li>
+</ul>
+<p>Compare:</p>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Poor</th>
+<th>Better</th>
+</tr></thead>
+<tbody><tr>
+<td>
+<code>pct2</code>: percent</td>
+<td>
+<code>pct_no_vehicle</code>: Percent of occupied housing units with
+no vehicle available. Decimal, 0 to 100. Calculated as B08201_002E /
+B08201_001E x 100 from ACS 2020-2024 5-year estimates. Null where the
+tract has no households.</td>
+</tr></tbody>
+</table>
+<p>The <strong>Designing Your Data</strong> episode of the Data
+Management module shows how to build a data dictionary before collecting
+data; when you curate the data, that same dictionary becomes part of the
+documentation.</p>
+</section><section><h2 class="section-heading" id="provenance-sources-and-processing">Provenance: sources and processing<a class="anchor" aria-label="anchor" href="#provenance-sources-and-processing"></a>
+</h2>
+<hr class="half-width">
+<p>To trust or reproduce a dataset, others need its
+<strong>provenance</strong>: every source and every step.</p>
+<div class="section level3">
+<h3 id="record-your-sources-precisely">Record your sources precisely<a class="anchor" aria-label="anchor" href="#record-your-sources-precisely"></a>
+</h3>
+<p>For each input, note:</p>
+<ul>
+<li>the <strong>publisher</strong> and <strong>product
+name</strong>
+</li>
+<li>the <strong>version</strong>, <strong>vintage</strong> or
+<strong>year</strong> (for example “TIGER/Line 2024” or “ACS 2020-2024
+5-year estimates”)</li>
+<li>the <strong>URL</strong> or API request</li>
+<li>the <strong>date you downloaded</strong> it</li>
+<li>its <strong>license</strong>
+</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="record-what-you-did">Record what you did<a class="anchor" aria-label="anchor" href="#record-what-you-did"></a>
+</h3>
+<p>Processing steps are easy to forget. Record them as you go:</p>
+<ul>
+<li>
+<strong>Scripts</strong> are the best record: they document every
+step exactly and can be rerun. Comment them, and number them in the
+order they run.</li>
+<li>For work done by pointing and clicking, keep a <strong>processing
+log</strong>: the date, the tool, its settings, and the input and output
+file names. QGIS also keeps a <strong>history</strong> of Processing
+tools you have run (Processing &gt; History), including their
+parameters.</li>
+<li>Note the <strong>software and versions</strong> used (for example,
+QGIS 3.40 or Python 3.12 with geopandas 1.0), because results can change
+between versions.</li>
+</ul>
+<div id="document-decisions-not-just-steps" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="document-decisions-not-just-steps" class="callout-inner">
+<h3 class="callout-title">Document decisions, not just steps</h3>
+<div class="callout-content">
+<p>The most valuable notes record <strong>why</strong>: why 800 m was
+chosen as the walking threshold, why two stores were removed, why a
+particular census year was used. Steps can sometimes be reconstructed
+from code; reasons cannot.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="citing-data">Citing data<a class="anchor" aria-label="anchor" href="#citing-data"></a>
+</h2>
+<hr class="half-width">
+<p>Cite datasets the way you cite articles, so their creators receive
+credit and readers can find the exact data. A data citation usually
+includes:</p>
+<p><strong>Creator (Year). <em>Title</em> (Version) [Data set].
+Publisher. Persistent identifier or URL.</strong></p>
+<p>For example:</p>
+<blockquote>
+<p>U.S. Census Bureau. <em>American Community Survey 5-Year Estimates,
+2020-2024</em>, Table B08201: Household Size by Vehicles Available [Data
+set]. Census Data API. Retrieved 2026-10-17 from <a href="https://api.census.gov/data/2024/acs/acs5" class="external-link uri">https://api.census.gov/data/2024/acs/acs5</a></p>
+</blockquote>
+<p>For data without a DOI, include the access date, since the content
+behind a URL can change.</p>
+<div id="improve-the-codebook-entries" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="improve-the-codebook-entries" class="callout-inner">
+<h3 class="callout-title">Improve the codebook entries</h3>
+<div class="callout-content">
+<p>Rewrite each of these as a useful codebook entry:</p>
+<ol style="list-style-type: decimal">
+<li>
+<code>inc</code>: income</li>
+<li>
+<code>dist</code>: distance to store</li>
+<li>
+<code>type</code>: 1, 2, 3</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>
+<code>med_hh_income</code>: Median household income in the past 12
+months, in 2024 inflation-adjusted U.S. dollars. Integer. Source: ACS
+2020-2024 5-year estimates, variable B19013_001E. Null where the Census
+Bureau could not calculate an estimate (annotation code -666666666 in
+the source).</li>
+<li>
+<code>dist_nearest_supermarket_m</code>: Distance along the road
+network from the tract’s population-weighted center to the nearest
+supermarket, in meters. Decimal. Calculated in QGIS with the Shortest
+path tool on TIGER/Line 2024 roads.</li>
+<li>
+<code>store_type</code>: Type of store. Text. Allowed values:
+<code>Supermarket</code>, <code>Small market</code>,
+<code>Convenience</code>, <code>Other</code>. (Better still, store the
+words rather than numeric codes; if codes are kept, list what each
+number means.)</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="write-a-readme" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="write-a-readme" class="callout-inner">
+<h3 class="callout-title">Write a README</h3>
+<div class="callout-content">
+<p>Write a short README for a dataset you have created or used (or for
+the census tract map of households without a car from the Data
+Collection module). Include at least: a title, creator and contact, the
+files, the coordinate reference system, sources, a summary of methods,
+limitations, how to cite it and the license.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>Answers will vary. Check your README against these questions:</p>
+<ul>
+<li>Could a stranger tell what the data is and where and when it
+describes, in under a minute?</li>
+<li>Are all files listed and explained?</li>
+<li>Is the coordinate reference system given as an EPSG code?</li>
+<li>Is every source named, with its version and download date?</li>
+<li>Are known limitations stated?</li>
+<li>Is there a citation and a license?</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Documentation is the human-readable explanation that lets others use
+data correctly</li>
+<li>Every dataset needs a README covering what, who, when, where, files,
+CRS, sources, methods, limitations, citation and license</li>
+<li>A codebook or data dictionary describes each variable’s meaning,
+type, units, values and missing-value codes</li>
+<li>Record provenance: precise sources, every processing step, software
+versions, and the reasons for decisions</li>
+<li>Cite datasets with creator, year, title, version, publisher and a
+persistent identifier or URL with access date</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Links listed here can be reused across pages as [text][name].
+Add reference-style links below as needed.
+-->
+</section></section><section id="aio-preservation"><p>Content from <a href="preservation.html">Preservation</a></p>
+<hr>
+<p>Last updated on 2026-10-17 |
+
+        <a href="https://github.com/SpatialTurn/datacurationmain/edit/main/episodes/preservation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Why does digital data need active preservation?</li>
+<li>Which file formats are safest for the long term?</li>
+<li>How can I tell whether a file has changed or been corrupted?</li>
+<li>What makes a repository trustworthy?</li>
+<li>How are very large datasets stored and moved?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Explain the threats to long-term access to digital data</li>
+<li>Choose preservation-friendly formats for geospatial data</li>
+<li>Explain fixity and checksums</li>
+<li>Describe the OAIS model and the signs of a trustworthy
+repository</li>
+<li>Recognize the tools and challenges of preserving very large
+datasets</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="digital-data-does-not-keep-itself">Digital data does not keep itself<a class="anchor" aria-label="anchor" href="#digital-data-does-not-keep-itself"></a>
+</h2>
+<hr class="half-width">
+<p>A printed map in a drawer can last centuries. A digital file can
+become unusable in a few years, without anyone deleting it. The main
+threats are:</p>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Threat</th>
+<th>Example</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Media failure</strong></td>
+<td>Hard drives, USB sticks and optical discs fail with age, and a
+single failed drive can hold years of work</td>
+</tr>
+<tr>
+<td>
+<strong>Bit rot</strong> (silent corruption)</td>
+<td>A few bits flip during storage or copying, and a file no longer
+opens or, worse, opens with wrong values</td>
+</tr>
+<tr>
+<td><strong>Format obsolescence</strong></td>
+<td>No current software can read a format any more</td>
+</tr>
+<tr>
+<td><strong>Loss of context</strong></td>
+<td>The file survives but nobody knows what it means (no metadata or
+documentation)</td>
+</tr>
+<tr>
+<td><strong>Organizational failure</strong></td>
+<td>A lab closes, a student graduates, a cloud account lapses, a website
+goes offline</td>
+</tr>
+<tr>
+<td><strong>Human error</strong></td>
+<td>Accidental deletion or overwriting</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Digital preservation</strong> is the set of activities that
+keep data <strong>accessible, readable, unchanged and
+understandable</strong> for as long as it is needed. Backups (covered in
+the Data Management module) protect against media failure and human
+error; preservation also deals with formats, integrity and context over
+decades.</p>
+</section><section><h2 class="section-heading" id="preservation-friendly-formats">Preservation-friendly formats<a class="anchor" aria-label="anchor" href="#preservation-friendly-formats"></a>
+</h2>
+<hr class="half-width">
+<p>Formats most likely to remain readable are:</p>
+<ul>
+<li>
+<strong>open</strong>, with a published specification anyone can
+implement</li>
+<li>
+<strong>widely used</strong>, with many programs that can read
+them</li>
+<li>
+<strong>well documented</strong> and <strong>stable</strong> over
+time</li>
+<li>
+<strong>not encrypted</strong> or locked to particular software</li>
+<li>
+<strong>lossless</strong>, keeping all the original information</li>
+</ul>
+<p>The U.S. Library of Congress publishes a <strong>Recommended Formats
+Statement</strong>, and many repositories publish their own lists of
+preferred formats. For geospatial data, good choices are:</p>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Data</th>
+<th>Preferred for preservation</th>
+<th>Acceptable, or convert if possible</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Vector</td>
+<td>GeoPackage, GeoJSON (for modest sizes), and shapefile (complete with
+<code>.prj</code>)</td>
+<td>File geodatabase, KML</td>
+</tr>
+<tr>
+<td>Raster</td>
+<td>GeoTIFF, including Cloud Optimized GeoTIFF; NetCDF for
+multidimensional data</td>
+<td>Proprietary image formats; JPEG (lossy)</td>
+</tr>
+<tr>
+<td>Tables</td>
+<td>CSV (UTF-8 text)</td>
+<td>Excel workbooks</td>
+</tr>
+<tr>
+<td>Documents</td>
+<td>PDF/A, plain text, Markdown</td>
+<td>Word documents</td>
+</tr>
+<tr>
+<td>Maps and project files</td>
+<td>Export final maps as PDF/A or PNG</td>
+<td>QGIS or ArcGIS project files (they depend on software versions and
+data paths)</td>
+</tr>
+</tbody>
+</table>
+<p>Keep a copy in the <strong>original</strong> format too, if
+conversion might lose something, and note the conversion in the
+documentation.</p>
+</section><section><h2 class="section-heading" id="fixity-has-anything-changed">Fixity: has anything changed?<a class="anchor" aria-label="anchor" href="#fixity-has-anything-changed"></a>
+</h2>
+<hr class="half-width">
+<p><strong>Fixity</strong> means being able to show that a file has not
+changed since it was stored. It is checked with a
+<strong>checksum</strong> (or hash): a short code calculated from the
+file’s contents, such as a SHA-256 or MD5 value. If even one bit of the
+file changes, the checksum changes completely.</p>
+<pre><code>sha256  3f1a9c...e7b2  grocery_stores.gpkg
+sha256  a84d02...19fc  data_dictionary.csv</code></pre>
+<p>Repositories calculate checksums when data is deposited and recheck
+them regularly, repairing any damaged copy from another. You can do the
+same for important files: record checksums in a text file alongside the
+data, and compare them after copying or moving data. Free tools exist on
+every operating system (for example
+<code>certutil -hashfile file SHA256</code> on Windows, or
+<code>shasum -a 256 file</code> on macOS and Linux).</p>
+</section><section><h2 class="section-heading" id="strategies-for-keeping-data-usable">Strategies for keeping data usable<a class="anchor" aria-label="anchor" href="#strategies-for-keeping-data-usable"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>
+<strong>Multiple copies in different places</strong>, regularly
+checked (fixity), so that a damaged copy can be replaced</li>
+<li>
+<strong>Migration</strong>: converting data to a current format
+before the old one becomes unreadable</li>
+<li>
+<strong>Emulation</strong>: running old software on a simulated old
+computer (mostly used for software and complex digital objects)</li>
+<li>
+<strong>Metadata and documentation</strong>: so that the data can
+still be understood when its creators are gone</li>
+<li>
+<strong>Persistent identifiers</strong> (DOIs): so that the data can
+still be found even if web addresses change</li>
+</ul></section><section><h2 class="section-heading" id="repositories-and-the-oais-model">Repositories and the OAIS model<a class="anchor" aria-label="anchor" href="#repositories-and-the-oais-model"></a>
+</h2>
+<hr class="half-width">
+<p>For most researchers, the best preservation strategy is to
+<strong>deposit data in a repository</strong> whose job is preservation.
+Many repositories follow the <strong>Open Archival Information System
+(OAIS)</strong> reference model (ISO 14721), which describes an archive
+in terms of the packages of information it handles:</p>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Package</th>
+<th>What it is</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Submission Information Package (SIP)</strong></td>
+<td>What the depositor provides: data, documentation, metadata</td>
+</tr>
+<tr>
+<td><strong>Archival Information Package (AIP)</strong></td>
+<td>What the archive stores long term, with added preservation metadata
+and checksums</td>
+</tr>
+<tr>
+<td><strong>Dissemination Information Package (DIP)</strong></td>
+<td>What users receive when they download</td>
+</tr>
+</tbody>
+</table>
+<p>OAIS also stresses that an archive must preserve data for a
+<strong>designated community</strong>: the people expected to use it.
+For social scientists, that means documentation written for researchers
+who know the field but not your project.</p>
+<div class="section level3">
+<h3 id="signs-of-a-trustworthy-repository">Signs of a trustworthy repository<a class="anchor" aria-label="anchor" href="#signs-of-a-trustworthy-repository"></a>
+</h3>
+<ul>
+<li>It assigns <strong>persistent identifiers</strong> (DOIs) and keeps
+the landing page available even if data is withdrawn</li>
+<li>It has a clear <strong>preservation policy</strong> and commitment
+(how long, and what happens if it closes)</li>
+<li>It keeps <strong>multiple copies</strong> and checks
+<strong>fixity</strong>
+</li>
+<li>It requires <strong>metadata</strong> and reviews deposits</li>
+<li>It holds a certification such as <strong>CoreTrustSeal</strong>,
+which assesses repositories against a set of requirements for
+trustworthiness</li>
+</ul>
+</div>
+</section><section><h2 class="section-heading" id="very-large-datasets">Very large datasets<a class="anchor" aria-label="anchor" href="#very-large-datasets"></a>
+</h2>
+<hr class="half-width">
+<p>Some datasets, such as satellite image archives, climate model output
+or national lidar, are far too large for email, USB drives or ordinary
+cloud folders. Curating them raises new problems:</p>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Challenge</th>
+<th>Approaches</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Storage cost</strong></td>
+<td>Institutional research storage; cloud object storage (such as Amazon
+S3, Google Cloud Storage or Microsoft Azure); choosing what really needs
+keeping</td>
+</tr>
+<tr>
+<td><strong>Moving data</strong></td>
+<td>High-speed transfer services such as <strong>Globus</strong>, used
+by many universities and computing centers to move terabytes reliably
+between institutions</td>
+</tr>
+<tr>
+<td><strong>Using without moving</strong></td>
+<td>Cloud-optimized formats (Cloud Optimized GeoTIFF, Zarr, GeoParquet)
+let users read only the part they need over the web</td>
+</tr>
+<tr>
+<td><strong>Describing collections</strong></td>
+<td>Machine-readable metadata and catalogs, such as STAC for
+imagery</td>
+</tr>
+<tr>
+<td><strong>Preservation over decades</strong></td>
+<td>Format migration plans, documented processing so that derived
+products can be regenerated</td>
+</tr>
+</tbody>
+</table>
+<p>A useful question for large data: <strong>does it need to be
+preserved, or can it be recreated?</strong> Raw satellite images are
+preserved by space agencies; a project may only need to preserve its
+code and the small derived products.</p>
+<div id="format-choices-for-an-archive" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="format-choices-for-an-archive" class="callout-inner">
+<h3 class="callout-title">Format choices for an archive</h3>
+<div class="callout-content">
+<p>You are depositing a project’s final data. Which formats would you
+use for each item?</p>
+<ol style="list-style-type: decimal">
+<li>Census tract polygons joined to ACS estimates, currently in an Esri
+file geodatabase</li>
+<li>A land cover raster, currently in a proprietary image format</li>
+<li>A survey spreadsheet with several tabs and colored cells marking
+problems</li>
+<li>The final maps from your thesis, made in QGIS</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>
+<strong>GeoPackage</strong> (or GeoJSON if small), plus a CSV of the
+attribute table with GEOIDs as text</li>
+<li>
+<strong>GeoTIFF</strong> with lossless compression, with its CRS and
+NoData value recorded</li>
+<li>One <strong>CSV</strong> per tab, with the meaning of the colors
+turned into an explicit column (for example <code>flag_reason</code>),
+and a codebook</li>
+<li>
+<strong>PDF/A</strong> or high-resolution <strong>PNG</strong>
+exports, plus the QGIS project and its data for anyone who wants to
+remake them (noting the QGIS version)</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="why-checksums" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="why-checksums" class="callout-inner">
+<h3 class="callout-title">Why checksums?</h3>
+<div class="callout-content">
+<p>A collaborator copies 300 GB of imagery to an external drive and
+mails it to you. How can you be sure every file arrived intact?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>Ask the collaborator to calculate a checksum (such as SHA-256) for
+every file before sending, and to include the list. After copying the
+files from the drive, calculate the checksums again and compare. Any
+file whose checksum differs was corrupted and must be sent again.
+Transfer services such as Globus check integrity automatically.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Digital data is threatened by media failure, silent corruption,
+format obsolescence, loss of context and organizational change</li>
+<li>Preserve data in open, widely used, well-documented, lossless
+formats such as GeoPackage, GeoTIFF and CSV</li>
+<li>Checksums provide fixity: proof that a file has not changed</li>
+<li>Deposit data in a trustworthy repository that assigns persistent
+identifiers and has a preservation commitment</li>
+<li>Very large data needs research storage, transfer services such as
+Globus, and cloud-optimized formats</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Links listed here can be reused across pages as [text][name].
+Add reference-style links below as needed.
+-->
+</section></section><section id="aio-sharing"><p>Content from <a href="sharing.html">Sharing and Publishing Data</a></p>
+<hr>
+<p>Last updated on 2026-10-17 |
+
+        <a href="https://github.com/SpatialTurn/datacurationmain/edit/main/episodes/sharing.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Where should I share my research data?</li>
+<li>What is a DOI, and why does it matter?</li>
+<li>Which license should I choose for my data?</li>
+<li>How do the FAIR and CARE principles guide sharing?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Compare institutional, disciplinary and general-purpose
+repositories</li>
+<li>Explain persistent identifiers, including DOIs and ORCIDs</li>
+<li>Choose an appropriate license, and respect the licenses of the data
+you reuse</li>
+<li>Distinguish open, embargoed and controlled access</li>
+<li>Apply the FAIR and CARE principles when sharing data</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="why-share-data">Why share data?<a class="anchor" aria-label="anchor" href="#why-share-data"></a>
+</h2>
+<hr class="half-width">
+<p>Sharing data lets others <strong>verify</strong> your findings,
+<strong>build on</strong> your work, and <strong>cite</strong> it, which
+gives you credit for the effort of creating it. It is increasingly
+<strong>required</strong>: by funders (in data management and sharing
+plans), by federal public access policies, and by many journals. And it
+avoids the waste of others collecting the same data again.</p>
+<p>Sharing well, however, takes more than emailing a file on request
+(“data available upon request” often turns out to mean “no longer
+available”). It means putting the data, with its documentation,
+somewhere designed to keep it findable and accessible.</p>
+</section><section><h2 class="section-heading" id="choosing-a-repository">Choosing a repository<a class="anchor" aria-label="anchor" href="#choosing-a-repository"></a>
+</h2>
+<hr class="half-width">
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Kind</th>
+<th>Examples</th>
+<th>Good for</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Institutional</strong></td>
+<td>Purdue University Research Repository (<strong>PURR</strong>)</td>
+<td>Any data from Purdue researchers; local support from the
+Libraries</td>
+</tr>
+<tr>
+<td>
+<strong>Disciplinary</strong> (domain)</td>
+<td>
+<strong>ICPSR</strong> (social and behavioral science),
+<strong>OpenTopography</strong> (elevation and lidar),
+<strong>Qualitative Data Repository</strong> (qualitative social
+science)</td>
+<td>Reaching the right community; expert curation; standards for the
+field</td>
+</tr>
+<tr>
+<td><strong>General-purpose</strong></td>
+<td>
+<strong>Zenodo</strong>, <strong>Harvard Dataverse</strong>,
+<strong>Open Science Framework (OSF)</strong>,
+<strong>figshare</strong>, <strong>Dryad</strong>
+</td>
+<td>Data with no obvious disciplinary home</td>
+</tr>
+<tr>
+<td><strong>Government portals</strong></td>
+<td>Data.gov, state GIS portals</td>
+<td>Data produced by or for government agencies</td>
+</tr>
+<tr>
+<td><strong>Code platforms</strong></td>
+<td>GitHub, linked to Zenodo for a DOI</td>
+<td>Code and small text-based data, plus documentation</td>
+</tr>
+</tbody>
+</table>
+<p>Ask:</p>
+<ul>
+<li>Does my <strong>funder</strong> or <strong>journal</strong> require
+or recommend a particular repository?</li>
+<li>Is there a <strong>disciplinary repository</strong> my readers
+already use?</li>
+<li>Does it assign <strong>DOIs</strong>, require
+<strong>metadata</strong>, and have a <strong>preservation</strong>
+commitment?</li>
+<li>Can it handle my data’s <strong>size</strong> and any need for
+<strong>restricted access</strong>?</li>
+<li>Does it cost anything, and how long will it keep the data?</li>
+</ul>
+<div class="section level3">
+<h3 id="purr-at-purdue">PURR at Purdue<a class="anchor" aria-label="anchor" href="#purr-at-purdue"></a>
+</h3>
+<p><strong>PURR</strong> (<a href="https://purr.purdue.edu/" class="external-link uri">https://purr.purdue.edu/</a>) is Purdue’s research
+repository. Researchers create a <strong>project space</strong> to
+collaborate and store files (each project starts with 100 GB, and
+grant-funded projects can be increased to 1 TB at no cost), and can then
+<strong>publish</strong> a dataset, which receives a <strong>DataCite
+DOI</strong> and is archived for the long term. Collaborators from other
+institutions can be invited to a project. The Purdue Libraries can help
+prepare data for publication.</p>
+</div>
+<div class="section level3">
+<h3 id="icpsr-for-social-science">ICPSR for social science<a class="anchor" aria-label="anchor" href="#icpsr-for-social-science"></a>
+</h3>
+<p>The <strong>Inter-university Consortium for Political and Social
+Research</strong> (ICPSR, at the University of Michigan) archives social
+and behavioral science data, including many major surveys. It curates
+deposits (checking files, writing codebooks, removing identifying
+information) and offers <strong>restricted-use</strong> access for
+sensitive data, including data with detailed geography.</p>
+</div>
+</section><section><h2 class="section-heading" id="persistent-identifiers">Persistent identifiers<a class="anchor" aria-label="anchor" href="#persistent-identifiers"></a>
+</h2>
+<hr class="half-width">
+<p>A web address can break; a <strong>persistent identifier</strong>
+(PID) is designed to keep working.</p>
+<ul>
+<li>A <strong>DOI</strong> (Digital Object Identifier), such as
+<code>https://doi.org/10.4231/XXXX</code>, identifies a dataset (or
+article) and always resolves to its current landing page. Repositories
+register dataset DOIs, usually through <strong>DataCite</strong>, along
+with standard metadata.</li>
+<li>An <strong>ORCID</strong> iD (such as
+<code>0000-0002-1825-0097</code>) identifies <strong>you</strong> as a
+researcher, so your datasets and papers are linked to you even if your
+name or institution changes.</li>
+</ul>
+<p>The 2022 federal public access memo specifically asks agencies to use
+persistent identifiers for research outputs and researchers.</p>
+</section><section><h2 class="section-heading" id="licenses">Licenses<a class="anchor" aria-label="anchor" href="#licenses"></a>
+</h2>
+<hr class="half-width">
+<p>A <strong>license</strong> tells others what they may do with your
+data. Without one, people may be unsure whether they can reuse it at
+all. Common choices for data:</p>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>License</th>
+<th>What it allows</th>
+<th>Notes</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+<strong>CC0</strong> (public domain dedication)</td>
+<td>Any use, no conditions</td>
+<td>Recommended by many repositories for data; citation is still
+expected by scholarly norms</td>
+</tr>
+<tr>
+<td><strong>CC BY 4.0</strong></td>
+<td>Any use, with <strong>attribution</strong>
+</td>
+<td>A common default; requires credit to the creator</td>
+</tr>
+<tr>
+<td>
+<strong>ODbL</strong> (Open Database License)</td>
+<td>Use and share, with attribution, and <strong>share-alike</strong>
+for adapted databases</td>
+<td>The license of OpenStreetMap; data derived from OSM must keep
+it</td>
+</tr>
+<tr>
+<td>
+<strong>CC BY-NC</strong> (non-commercial)</td>
+<td>Use with attribution, but not commercially</td>
+<td>Restrictive and often unclear; generally discouraged for research
+data</td>
+</tr>
+</tbody>
+</table>
+<p>Some things to know:</p>
+<ul>
+<li>
+<strong>Respect the licenses of what you reuse.</strong> If your
+dataset is built from OpenStreetMap, it must remain under the ODbL with
+attribution. U.S. federal data (such as Census Bureau data) is generally
+in the public domain.</li>
+<li>In the United States, <strong>facts</strong> themselves are not
+protected by copyright, though the selection and arrangement of a
+database can be; licenses make your intentions clear either way.</li>
+<li>You can only license what you have the right to share. Data from
+interviews, purchased data or data under a data use agreement may not be
+yours to license openly.</li>
+</ul></section><section><h2 class="section-heading" id="levels-of-access">Levels of access<a class="anchor" aria-label="anchor" href="#levels-of-access"></a>
+</h2>
+<hr class="half-width">
+<p>Not all data can be fully open. Repositories support several
+levels:</p>
+<table class="table">
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead><tr>
+<th>Level</th>
+<th>What it means</th>
+<th>When to use it</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Open</strong></td>
+<td>Anyone can download</td>
+<td>Most non-sensitive data</td>
+</tr>
+<tr>
+<td><strong>Embargoed</strong></td>
+<td>Metadata public now; data released after a set date</td>
+<td>Waiting for a paper to be published or a patent to be filed</td>
+</tr>
+<tr>
+<td><strong>Controlled (restricted) access</strong></td>
+<td>Approved users only, often under a data use agreement or in a secure
+environment</td>
+<td>Sensitive data, such as confidential survey responses or detailed
+locations of people</td>
+</tr>
+<tr>
+<td><strong>Metadata only</strong></td>
+<td>The record describes the data and how to request it</td>
+<td>Data that cannot be deposited, such as licensed commercial data</td>
+</tr>
+</tbody>
+</table>
+<p>Even when data must be restricted, publishing its
+<strong>metadata</strong> makes it findable, and is part of being
+FAIR.</p>
+</section><section><h2 class="section-heading" id="fair-and-care">FAIR and CARE<a class="anchor" aria-label="anchor" href="#fair-and-care"></a>
+</h2>
+<hr class="half-width">
+<p>The <strong>FAIR</strong> principles (findable, accessible,
+interoperable, reusable), introduced in the first episode, are about
+making data work well for <strong>machines and researchers</strong>.</p>
+<p>The <strong>CARE</strong> principles for Indigenous data governance,
+published by the Global Indigenous Data Alliance in 2019, add a focus on
+<strong>people and purpose</strong>, especially for data about
+Indigenous peoples, lands and resources:</p>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Principle</th>
+<th>Meaning</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Collective benefit</strong></td>
+<td>Data ecosystems should allow Indigenous peoples to benefit from the
+data</td>
+</tr>
+<tr>
+<td><strong>Authority to control</strong></td>
+<td>Indigenous peoples’ rights and interests in data about them must be
+recognized, including their authority to govern it</td>
+</tr>
+<tr>
+<td><strong>Responsibility</strong></td>
+<td>Those working with the data must show how it supports
+self-determination and collective benefit</td>
+</tr>
+<tr>
+<td><strong>Ethics</strong></td>
+<td>The rights and wellbeing of Indigenous peoples should be the primary
+concern throughout the data lifecycle</td>
+</tr>
+</tbody>
+</table>
+<p>The two are meant to be used <strong>together</strong>: “Be FAIR and
+CARE.” Geospatial data about sacred sites, land use or resources can
+have serious consequences for communities, so it should be shared only
+in ways the communities concerned agree to.</p>
+<div id="pick-a-repository" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="pick-a-repository" class="callout-inner">
+<h3 class="callout-title">Pick a repository</h3>
+<div class="callout-content">
+<p>Where would you deposit each dataset, and why?</p>
+<ol style="list-style-type: decimal">
+<li>Anonymized responses from a national survey about housing, with
+county of residence</li>
+<li>Grocery store points you verified in the field in Lafayette,
+Indiana, for a Purdue thesis</li>
+<li>A 2 TB lidar point cloud of a river corridor</li>
+<li>The Python code and small GeoJSON files behind a published
+paper</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>
+<strong>ICPSR</strong>: the social science community uses it, and it
+can offer restricted access if county plus other answers could identify
+people.</li>
+<li>
+<strong>PURR</strong>: Purdue’s repository, with a DOI and local
+support (Zenodo or Harvard Dataverse would also work).</li>
+<li>
+<strong>OpenTopography</strong> (a disciplinary repository for
+elevation data), or institutional research storage for the raw data plus
+a repository record with a DOI.</li>
+<li>
+<strong>GitHub</strong> for development, archived to
+<strong>Zenodo</strong> (or PURR) for a DOI that matches the published
+version.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="pick-a-license" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="pick-a-license" class="callout-inner">
+<h3 class="callout-title">Pick a license</h3>
+<div class="callout-content">
+<p>Which license would suit each case?</p>
+<ol style="list-style-type: decimal">
+<li>Tract-level statistics you calculated from public Census Bureau
+data</li>
+<li>A layer you created by editing and adding to OpenStreetMap data</li>
+<li>Interview transcripts collected under consent forms that promised
+confidentiality</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>
+<strong>CC0</strong> or <strong>CC BY 4.0</strong>: the inputs are
+public domain, so you are free to choose an open license.</li>
+<li>
+<strong>ODbL</strong>: it is a derivative of OpenStreetMap, so it
+must be shared under the same license with attribution.</li>
+<li>
+<strong>No open license</strong>: the consent forms rule out public
+sharing. Share only de-identified data (if the consent allows), under
+controlled access with a data use agreement, or share metadata
+only.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Share data through a repository rather than on request; choose
+disciplinary, institutional or general-purpose repositories to suit the
+data</li>
+<li>PURR is Purdue’s repository; ICPSR is the main archive for social
+science data</li>
+<li>Persistent identifiers (DOIs for data, ORCID iDs for people) keep
+data findable and creators credited</li>
+<li>Choose a clear license (often CC0 or CC BY), and keep the licenses
+of data you reuse, such as ODbL for OpenStreetMap</li>
+<li>Data can be open, embargoed, controlled or metadata-only; apply both
+FAIR and CARE principles</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Links listed here can be reused across pages as [text][name].
+Add reference-style links below as needed.
+-->
+</section></section><section id="aio-ethics"><p>Content from <a href="ethics.html">Ethics and Sensitive Location Data</a></p>
+<hr>
+<p>Last updated on 2026-10-17 |
+
+        <a href="https://github.com/SpatialTurn/datacurationmain/edit/main/episodes/ethics.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Why can location data identify people, even without names?</li>
+<li>How can geospatial data be shared while protecting privacy?</li>
+<li>What other kinds of location data are sensitive?</li>
+<li>What ethical and legal obligations apply?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Explain how locations and small counts can re-identify people</li>
+<li>Describe aggregation, geomasking, coordinate coarsening and
+suppression, and their trade-offs</li>
+<li>Recognize sensitive locations beyond personal data, such as
+archaeological sites and places important to communities</li>
+<li>Plan consent, review and access controls for sensitive geospatial
+data</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="location-is-personal">Location is personal<a class="anchor" aria-label="anchor" href="#location-is-personal"></a>
+</h2>
+<hr class="half-width">
+<p>Removing names from a dataset does not make it anonymous if it
+contains <strong>locations</strong>. A home address, or a point on a map
+that falls on one house, identifies a household as surely as a name.
+Combined with a few other details (age, sex, the date of a visit), even
+approximate locations can single people out.</p>
+<ul>
+<li>In a widely cited study of mobile phone records for 1.5 million
+people, <strong>four</strong> points in space and time were enough to
+uniquely identify 95% of individuals (de Montjoye and colleagues,
+<em>Scientific Reports</em>, 2013).</li>
+<li>Maps of individual cases (illnesses, crimes, survey responses) have
+been used to find the people behind them.</li>
+<li>Small areas can reveal individuals through <strong>small
+counts</strong>: if a census block contains one household of a
+particular kind, a table for that block describes that household.</li>
+</ul>
+<p>This is why the U.S. Census Bureau applies <strong>disclosure
+avoidance</strong> to everything it publishes. For the 2020 Census it
+adopted a method based on <strong>differential privacy</strong>, which
+adds carefully calibrated noise to published counts, especially for
+small areas.</p>
+<div id="sensitive-does-not-only-mean-personal" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="sensitive-does-not-only-mean-personal" class="callout-inner">
+<h3 class="callout-title">Sensitive does not only mean personal</h3>
+<div class="callout-content">
+<p>Some locations need protection even when no person is identified:</p>
+<ul>
+<li>
+<strong>Archaeological sites</strong>: published locations invite
+looting. U.S. federal law (including the Archaeological Resources
+Protection Act) allows agencies to withhold site locations.</li>
+<li>
+<strong>Sacred and culturally significant places</strong>: their
+location may be knowledge that a community does not wish to share (see
+the CARE principles in the previous episode).</li>
+<li>
+<strong>Endangered species</strong>: nest, den or plant locations
+can attract poachers or collectors.</li>
+<li>
+<strong>Critical infrastructure</strong> and
+<strong>shelters</strong> (for example, for survivors of domestic
+violence).</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="methods-for-protecting-locations">Methods for protecting locations<a class="anchor" aria-label="anchor" href="#methods-for-protecting-locations"></a>
+</h2>
+<hr class="half-width">
+<p>There is always a <strong>trade-off</strong> between protection and
+usefulness: the more a location is changed or hidden, the safer it is,
+and the less precise the analysis it supports.</p>
+<figure><img src="cur_geomasking.png" alt="Three maps of Lafayette and West Lafayette with simulated household locations. Left: 120 red points at exact locations, which could identify households. Middle: the same points aggregated to census tracts, shaded from light to dark red by count, so only totals per tract are shown. Right: donut geomasking, where every point has been moved a random distance between 250 and 750 meters; one point's true location is marked with an x inside an orange ring showing the area its masked point could fall in." class="figure mx-auto d-block"><div class="figcaption">Two ways of protecting individual
+locations.</div>
+</figure><table class="table">
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead><tr>
+<th>Method</th>
+<th>What it does</th>
+<th>Strengths</th>
+<th>Weaknesses</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Aggregation</strong></td>
+<td>Report counts or rates for areas (tracts, ZIP codes, grid cells)
+instead of points</td>
+<td>Simple, familiar, works with census data</td>
+<td>Loses detail; results depend on the areas chosen; small areas can
+still disclose</td>
+</tr>
+<tr>
+<td>
+<strong>Geomasking</strong> (random perturbation)</td>
+<td>Move each point a random distance and direction</td>
+<td>Keeps point patterns approximately</td>
+<td>Points can land in implausible places (rivers, other towns); too
+small a move protects little</td>
+</tr>
+<tr>
+<td><strong>Donut geomasking</strong></td>
+<td>Move each point at least a minimum and at most a maximum
+distance</td>
+<td>Guarantees every point moves; good balance for health and survey
+data</td>
+<td>Needs care in sparsely populated areas, where a 500 m move may not
+hide anyone</td>
+</tr>
+<tr>
+<td><strong>Coordinate coarsening</strong></td>
+<td>Round coordinates to fewer decimal places</td>
+<td>Very simple</td>
+<td>Creates a visible grid; protection depends on population
+density</td>
+</tr>
+<tr>
+<td><strong>Suppression</strong></td>
+<td>Withhold counts below a threshold (for example, fewer than 10)</td>
+<td>Standard for published tables</td>
+<td>Information is lost; suppressed cells can sometimes be recalculated
+from totals</td>
+</tr>
+<tr>
+<td><strong>Controlled access</strong></td>
+<td>Keep precise data, but share it only with approved users in a secure
+setting</td>
+<td>Full precision for legitimate research</td>
+<td>Slower and more limited access</td>
+</tr>
+</tbody>
+</table>
+<p>How much does rounding coordinates hide? At the latitude of
+Indiana:</p>
+<table class="table">
+<thead><tr>
+<th>Decimal places (degrees)</th>
+<th>Approximate precision</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>2 (40.42)</td>
+<td>about 1 km</td>
+</tr>
+<tr>
+<td>3 (40.425)</td>
+<td>about 100 m: a city block</td>
+</tr>
+<tr>
+<td>4 (40.4247)</td>
+<td>about 10 m: a single building</td>
+</tr>
+<tr>
+<td>5 or more</td>
+<td>about 1 m or better: a specific spot</td>
+</tr>
+</tbody>
+</table>
+<p>Most phone GPS coordinates are recorded with six or more decimal
+places, far more precise than needed for most social science analysis,
+and far more revealing.</p>
+<div id="health-data-rules-give-a-useful-benchmark" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="health-data-rules-give-a-useful-benchmark" class="callout-inner">
+<h3 class="callout-title">Health data rules give a useful benchmark</h3>
+<div class="callout-content">
+<p>Under the U.S. HIPAA “Safe Harbor” rule for de-identifying health
+information, geographic units smaller than a state, such as street
+addresses, cities, counties and full ZIP codes, must be removed. The
+first three digits of a ZIP code may be kept only if that three-digit
+area contains more than 20,000 people. Your project may not be covered
+by HIPAA, but the rule shows how seriously small-area geography is
+treated.</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="consent-review-and-agreements">Consent, review and agreements<a class="anchor" aria-label="anchor" href="#consent-review-and-agreements"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>
+<strong>Institutional review.</strong> Research that collects
+information about identifiable people usually requires review by an
+Institutional Review Board (IRB) before data collection starts. Describe
+in the protocol what location data you will collect, how precise it will
+be, and how it will be protected and shared.</li>
+<li>
+<strong>Informed consent.</strong> Tell participants what will be
+shared, with whom, and in what form. If the consent form promises that
+locations will never be released, they cannot later be published, even
+in a repository.</li>
+<li>
+<strong>Data use agreements.</strong> Data obtained from others
+(health departments, companies, other researchers) often comes with
+rules on storage, linking and publication. Follow them, and record them
+in your documentation.</li>
+<li>
+<strong>Secure storage.</strong> Keep identifiable data only in
+approved, access-controlled storage, separate from de-identified working
+files, and delete it when it is no longer needed and the agreement
+allows.</li>
+</ul></section><section><h2 class="section-heading" id="beyond-privacy-the-power-of-maps">Beyond privacy: the power of maps<a class="anchor" aria-label="anchor" href="#beyond-privacy-the-power-of-maps"></a>
+</h2>
+<hr class="half-width">
+<p>Maps shape decisions about investment, policing, insurance and
+services. Ethical practice also means asking:</p>
+<ul>
+<li>Who could be <strong>harmed</strong> if this map or dataset were
+misused?</li>
+<li>Does labeling an area (a “food desert”, a “high-crime neighborhood”)
+<strong>stigmatize</strong> the people who live there?</li>
+<li>Were the communities being mapped <strong>involved</strong>, and do
+they benefit?</li>
+<li>Does the data <strong>represent</strong> everyone, or are some
+groups missing (people without phones, without addresses, or not
+counted)?</li>
+</ul></section><section><h2 class="section-heading" id="a-checklist-before-sharing-location-data">A checklist before sharing location data<a class="anchor" aria-label="anchor" href="#a-checklist-before-sharing-location-data"></a>
+</h2>
+<hr class="half-width">
+<ol style="list-style-type: decimal">
+<li>Does the dataset contain locations of <strong>people</strong>, or of
+<strong>sensitive places</strong>?</li>
+<li>What did <strong>consent forms</strong>, the <strong>IRB</strong>
+approval and any <strong>data use agreements</strong> permit?</li>
+<li>Could someone <strong>re-identify</strong> a person by combining the
+locations with other columns or with public data?</li>
+<li>Is the <strong>precision</strong> greater than the analysis needs?
+Can it be aggregated, masked or rounded?</li>
+<li>Are there <strong>small counts</strong> that should be
+suppressed?</li>
+<li>Should the data be <strong>open</strong>, <strong>controlled
+access</strong>, or <strong>metadata only</strong>?</li>
+<li>Is the protection method <strong>documented</strong>, so users
+understand the limitations it introduces?</li>
+</ol>
+<div id="is-this-safe-to-share" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="is-this-safe-to-share" class="callout-inner">
+<h3 class="callout-title">Is this safe to share?</h3>
+<div class="callout-content">
+<p>A study surveyed 300 older adults about how they get groceries. The
+dataset contains respondent ID, age, sex, whether they own a car, and
+the latitude and longitude of their home (to six decimal places). The
+researcher wants to deposit it openly. What are the risks, and what
+would you recommend?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>The home coordinates identify each household almost exactly, and
+combined with age and sex they would identify most respondents. Options
+include:</p>
+<ul>
+<li>Remove the coordinates and share the census tract (or block group)
+GEOID instead, after checking that no tract has only a handful of
+respondents with the same age and sex.</li>
+<li>Or apply <strong>donut geomasking</strong> with a distance suited to
+the population density, and coarsen age into groups.</li>
+<li>Share the precise data, if at all, only through <strong>controlled
+access</strong> (for example at ICPSR), as the consent form allows.</li>
+<li>Document the protection method so users know the locations are
+approximate.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="choose-the-masking-distance" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="choose-the-masking-distance" class="callout-inner">
+<h3 class="callout-title">Choose the masking distance</h3>
+<div class="callout-content">
+<p>You are geomasking survey locations in two places: downtown
+Lafayette, where thousands of people live within a few hundred meters,
+and a rural part of the county with a few farmhouses per square
+kilometer. Should you use the same masking distance in both? Why or why
+not?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>No. What protects people is the <strong>number of other
+households</strong> a masked point could plausibly belong to, not the
+distance itself. A move of a few hundred meters hides a household among
+hundreds of others downtown, but in the countryside it may still point
+to a single farm. Use larger distances where population density is low
+(or adaptive methods that scale the distance to the local population),
+or aggregate rural responses to larger areas.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Locations can identify people even without names, especially
+combined with other attributes or small counts</li>
+<li>Aggregation, geomasking, coordinate coarsening, suppression and
+controlled access protect locations, each with a trade-off in
+precision</li>
+<li>Some places need protection even when no person is involved:
+archaeological sites, sacred places, endangered species</li>
+<li>Plan protection before collecting data: IRB review, informed
+consent, data use agreements and secure storage</li>
+<li>Document how locations were protected, and consider who could be
+harmed by a map</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Links listed here can be reused across pages as [text][name].
+Add reference-style links below as needed.
+-->
 </section></section>
 </div>
     </main>
@@ -1033,14 +2803,14 @@ any links that you are not going to use.
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/SpatialTurn/datacurationmain/edit/main/README.md" class="external-link">Edit on GitHub</a>
 
 	
-        | <a href="https://github.com/carpentries/workbench-template-md/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
-        | <a href="https://github.com/carpentries/workbench-template-md/" class="external-link">Source</a></p>
+        | <a href="https://github.com/SpatialTurn/datacurationmain/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
+        | <a href="https://github.com/SpatialTurn/datacurationmain/" class="external-link">Source</a></p>
         <p>
         <a href="citation.html">Cite</a>
-        | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="mailto:ilindsay@purdue.edu">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 		</div>
 		<div class="col-md-6">
 
@@ -1060,18 +2830,18 @@ any links that you are not going to use.
     {
   "@context": "https://schema.org",
   "@type": "LearningResource",
-  "@id": "https://carpentries.github.io/workbench-template-md/aio.html",
+  "@id": "https://SpatialTurn.github.io/datacurationmain/aio.html",
   "inLanguage": "en",
   "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
-  "keywords": "software, data, lesson, The Carpentries",
+  "keywords": "data curation, metadata, documentation, digital preservation, repositories, data sharing, FAIR, CARE, privacy, GIS, social science",
   "name": "All in One View",
   "creativeWorkStatus": "active",
-  "url": "https://carpentries.github.io/workbench-template-md/aio.html",
-  "identifier": "https://carpentries.github.io/workbench-template-md/aio.html",
-  "dateCreated": "2026-10-06",
-  "dateModified": "2026-10-13",
-  "datePublished": "2026-10-13"
+  "url": "https://SpatialTurn.github.io/datacurationmain/aio.html",
+  "identifier": "https://SpatialTurn.github.io/datacurationmain/aio.html",
+  "dateCreated": "2026-06-26",
+  "dateModified": "2026-10-17",
+  "datePublished": "2026-10-17"
 }
 
   </script><script>

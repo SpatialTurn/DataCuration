@@ -1,87 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/01-introduction.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/01-introduction.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/404.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/404.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/CODE_OF_CONDUCT.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/LICENSE.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/aio.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/aio.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/citation.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/citation.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/globaldata.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/documentation.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/images.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/ethics.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/index.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/globaldata.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/01-introduction.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/images.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/404.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/index.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/CODE_OF_CONDUCT.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/01-introduction.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/LICENSE.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/404.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/aio.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/citation.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/globaldata.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/aio.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/images.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/citation.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/index.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/documentation.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/instructor-notes.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/ethics.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/introduction.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/globaldata.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/key-points.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/images.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/profiles.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/index.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/reference.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/instructor-notes.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor-notes.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/introduction.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/introduction.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/key-points.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/key-points.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/metadata.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/profiles.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/preservation.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/reference.html</loc>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor/sharing.html</loc>
+  </url>
+  <url>
+    <loc>https://SpatialTurn.github.io/datacurationmain/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://SpatialTurn.github.io/datacurationmain/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://SpatialTurn.github.io/datacurationmain/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://SpatialTurn.github.io/datacurationmain/metadata.html</loc>
+  </url>
+  <url>
+    <loc>https://SpatialTurn.github.io/datacurationmain/preservation.html</loc>
+  </url>
+  <url>
+    <loc>https://SpatialTurn.github.io/datacurationmain/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://SpatialTurn.github.io/datacurationmain/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://SpatialTurn.github.io/datacurationmain/sharing.html</loc>
   </url>
 </urlset>
