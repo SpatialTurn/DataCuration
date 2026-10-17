@@ -2,7 +2,7 @@
 
 Source for the **Data Curation** module of
 [Enabling the Geospatial Turn in the Social Sciences](https://spatialturn.github.io/),
-published at <https://spatialturn.github.io/datacurationmain/>.
+published at <https://spatialturn.github.io/DataCuration/>.
 
 The lesson is built with [The Carpentries Workbench](https://carpentries.github.io/sandpaper-docs/). It is a
 theory-based module with no notebooks or data downloads.
