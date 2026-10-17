@@ -2,53 +2,14 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
+This module is **theory only**: there is nothing to install and no data to download. You need only a web
+browser to read the episodes and to explore the repositories and standards they link to.
 
-## Data Sets
+Optional, for exploring:
 
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
--->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
+- **QGIS** (<https://qgis.org>), to look at its metadata editor (Layer Properties > Metadata)
+- An **ORCID iD** (<https://orcid.org>), free, if you plan to publish data or articles
+- Access to your institution's research repository; at Purdue, **PURR** (<https://purr.purdue.edu/>)
 
-## Software Setup
-
-::::::::::::::::::::::::::::::::::::::: discussion
-
-### Details
-
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### Windows
-
-Use PuTTY
-
-::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### MacOS
-
-Use Terminal.app
-
-::::::::::::::::::::::::
-
-
-:::::::::::::::: spoiler
-
-### Linux
-
-Use Terminal
-
-::::::::::::::::::::::::
-
+To practice the challenges, it helps to have a dataset of your own (or one from another module) to document and
+plan for sharing.

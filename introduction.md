@@ -1,338 +1,191 @@
 ---
 title: "Introduction to Data Curation"
-teaching: 45
-exercises: 30
+teaching: 25
+exercises: 15
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions
 
-- What is data curation?
-- Why is data curation important in data science?
-- What are the stages of the data curation lifecycle?
-- How does good curation improve research quality and reproducibility?
-- What are common challenges in managing data?
+- What is data curation, and how does it differ from data management and data cleaning?
+- Why does curation matter for research, and for geospatial data in particular?
+- What are the stages of the curation lifecycle?
+- What do funders and federal policies now expect?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Define data curation and its purpose
-- Understand the lifecycle of curated data
-- Recognize best practices for organizing and managing datasets
-- Identify common metadata and documentation standards
-- Appreciate the role of data curation in reproducible science
+- Define data curation and explain its purpose
+- Distinguish curation from data management and data cleaning
+- Describe the stages of the curation lifecycle
+- Explain how public access policies and the FAIR principles shape curation
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## What is Data Curation?
+## What is data curation?
 
-**Data curation** is the process of organizing, documenting, preserving, and maintaining data so that it remains useful, understandable, and reusable over time.
+**Data curation** is the work of making data **understandable, trustworthy and reusable over the long
+term**, by people who were not involved in creating it. It includes:
 
-It includes:
+- describing data with **metadata** and **documentation**
+- choosing formats and storage that will **last**
+- depositing data in a **repository** where it can be found, cited and preserved
+- deciding **who may access** the data and under what **license**
+- protecting **sensitive information** before data is shared
 
-- Cleaning and validating data
-- Organizing files and formats
-- Creating metadata
-- Preserving datasets for long-term access
+A museum curator looks after objects so that future visitors can see and understand them. A data curator
+does the same for datasets.
+
+### Curation, management and cleaning
+
+| | Data cleaning | Data management | Data curation |
+|---|---|---|---|
+| Goal | Correct errors in the data | Keep data organized, safe and usable **during** a project | Keep data understandable and reusable **after** the project, by others |
+| Typical tasks | Fix typos, duplicates, missing values, invalid geometries | Folders, file names, versions, backups, quality checks | Metadata, documentation, preservation, repositories, licenses, access |
+| Time frame | Days to weeks | The life of the project | Years to decades |
+| Main audience | The analyst | The project team | Future users, including strangers |
+
+The three overlap, and the **Data Management** module covers organizing, versioning and quality in detail.
+This module focuses on what happens so that data can **outlive** the project that made it.
 
 ::::::::::::::::::::::::::::::::::::: callout
 
-### Key Idea
-Data curation is not just storing files — it is making data usable for future analysis.
+## Curation starts on day one
+
+Curation is often left until a project ends, when the people who understood the data have moved on and the
+details are forgotten. It is far easier to record where data came from, what each field means and what was done
+to it **while** the work happens. Think of curation as a habit, not a final task.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
----
+## Why curation matters
 
-## Why Data Curation Matters
+Poorly curated data leads to:
 
-Poorly curated data can lead to:
+- **Lost data**: files on a former student's laptop, an expired cloud account, an unreadable format
+- **Lost meaning**: a column called `pct2` that nobody can explain, or coordinates with no coordinate system
+- **Irreproducible results**: published findings that cannot be checked because the exact data is gone
+- **Wasted effort**: others collecting the same data again because they could not find or trust yours
 
-- Lost files
-- Confusing variable names
-- Missing context
-- Irreproducible research
+Well-curated data, by contrast, can be **cited** (giving its creators credit), **verified**, **combined** with
+other data, and **reused** for questions its creators never imagined. Census data collected in 1940, carefully
+preserved, is still used by historians, demographers and geographers today.
 
-Well-curated data helps:
+### Geospatial data adds challenges
 
-- Ensure reproducibility
-- Enable collaboration
-- Improve data quality
-- Support long-term preservation
+- Datasets are often **several files** (a shapefile) or **very large** (imagery, lidar)
+- They are meaningless without their **coordinate reference system**
+- **Boundaries change** (census tracts are redrawn every ten years), so the **date** of the geography matters
+- Formats change quickly, and some are **proprietary**
+- **Locations can identify people**, so sharing needs particular care
 
-### Example:
-A dataset named `final_data_v2_revised_REAL_final.csv` gives little confidence or clarity.
+## The curation lifecycle
 
-A curated alternative:
-`soil_moisture_2025_stationA_clean.csv`
+The UK's Digital Curation Centre (DCC) describes curation as a lifecycle. A simplified version:
 
----
+![The data curation lifecycle.](cur_lifecycle.png){alt="A cycle of seven boxes connected by arrows: 1 Create or receive, 2 Appraise and select, 3 Describe (metadata), 4 Ingest into a repository, 5 Preserve, 6 Provide access, 7 Reuse and transform, which leads back to Create or receive. In the center: throughout, plan, document, watch for change."}
 
-## The Data Curation Lifecycle
+| Stage | What happens |
+|---|---|
+| **Create or receive** | Data is created by a project, or received from someone else, with its documentation |
+| **Appraise and select** | Decide which data is worth keeping long term, and which can be discarded |
+| **Describe** | Write metadata and documentation so others can find and understand it |
+| **Ingest** | Deposit the data and documentation in a repository or archive |
+| **Preserve** | Keep it safe, readable and unchanged: checksums, backups, format migration |
+| **Provide access** | Make it findable and available, openly or under controlled access |
+| **Reuse and transform** | Others use the data, perhaps creating new datasets that start the cycle again |
 
-Data curation happens throughout the life of a dataset.
+Around the whole cycle run **planning**, **documentation**, and **community watch**: keeping an eye on new
+standards, formats and technologies that may require action.
 
-### Typical Lifecycle Stages:
+### Appraisal: not everything needs to be kept
 
-1. **Create / Collect**
-2. **Organize**
-3. **Document**
-4. **Store / Backup**
-5. **Preserve**
-6. **Share / Publish**
-7. **Reuse / Reanalyze**
+Keeping data costs money and effort. A useful set of questions for deciding what to curate:
 
+- Is it the data **underlying a publication**, or required by a funder or journal?
+- Is it **unique** or hard to recreate (field observations, historical records), or easily downloaded again
+  (a public census table)?
+- Is it likely to be **useful to others**?
+- Can it be **shared legally and ethically**?
 
+For data you downloaded from a stable public source, it is often enough to **cite** the source precisely
+(including the version and date) and keep the code that processes it, rather than archiving another copy.
 
-::::::::::::::::::::::::::::::::::::: callout
+## Public access and FAIR
 
-### Important
-Curation begins when data is created — not after the project ends.
+Expectations for sharing research data have grown quickly:
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+- **Funders** such as the National Science Foundation and the National Institutes of Health require a data
+  management and sharing plan with proposals.
+- A 2022 memorandum from the White House Office of Science and Technology Policy (the "Nelson memo") directed
+  federal agencies to make publications from federally funded research, **and the data underlying them**,
+  freely available without delay, and to use persistent identifiers and metadata. Agencies were asked to have
+  updated policies in effect by the end of 2025.
+- Many **journals** ask authors to share data, or to state where it can be found.
 
----
+Behind these policies are the **FAIR principles** (published in 2016), which say research data should be:
 
-## Core Principles of Good Data Curation
+| Principle | Means | In practice |
+|---|---|---|
+| **Findable** | People and computers can discover it | A persistent identifier (DOI), rich metadata, a searchable repository |
+| **Accessible** | It can be retrieved, with clear conditions | Standard web access; metadata stays available even if the data is restricted |
+| **Interoperable** | It works with other data and tools | Open formats, standard vocabularies, EPSG codes, standard identifiers such as GEOIDs |
+| **Reusable** | Others can use it correctly | A clear license, detailed documentation and provenance |
 
-### 1. Organization
-
-Use clear folder structures.
-
-Example:
-
-In your project folder:
-
-project/-
-
-You can file sub-folders with the following names:
-
-1. data_raw/
-2. data_clean/
-3. scripts/
-4. outputs/
-5. documentation/
-
-You can for example, write scripts in a way that save the outputs in `output/`. This helps maintain the continuity of your research. One needs to keep in mind that they should be able to redo the process of their application of research with ease. 
-
----
-
-### 2. Naming Conventions
-
-Good file names should be:
-- Descriptive
-- Consistent
-- Machine-readable
-
-Example:
-`river_discharge_monthly_2024.csv`
-
-Avoid:
-`data_new_latest2.csv`
-
----
-
-### 3. Documentation
-
-Every dataset should include documentation:
-
-- README file
-- Variable descriptions
-- Units of measurement
-- Data source notes
-
-Example README includes:
-
-- Project title
-- Author
-- Date created
-- File descriptions
-
----
-
-### 4. Metadata
-
-Metadata = “data about data”
-
-Examples:
-
-- Who created the dataset?
-- When was it collected?
-- What instruments were used?
-- What do columns mean?
+FAIR does not mean "open": sensitive data can be FAIR with controlled access. The following episodes take each
+part of curation in turn: **metadata**, **documentation**, **preservation**, **sharing**, and **ethics**.
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
-Why is metadata essential if someone else uses your dataset five years later?
+## Curation, management or cleaning?
+
+Classify each task:
+
+1. Removing 12 duplicate survey responses
+2. Choosing a folder structure for a team project
+3. Writing a description of each column for a dataset going into a repository
+4. Converting a final dataset from a proprietary format to GeoPackage for archiving
+5. Setting up nightly backups of the project drive
+
+:::::::::::::::: solution
+
+1. **Cleaning**
+2. **Management**
+3. **Curation** (documentation and metadata)
+4. **Curation** (preservation), though choosing open formats is good management too
+5. **Management**
+
+The boundaries are fuzzy, and that is fine: what matters is that each task gets done.
+
+:::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
----
+::::::::::::::::::::::::::::::::::::: challenge
 
-## Data Cleaning vs Data Curation
+## Keep or cite?
 
-These are related but different:
+At the end of a project you have: (a) county boundaries downloaded from the Census Bureau, (b) grocery store
+locations your team verified in the field, (c) a Python script that joins and analyzes them, and (d) 200 maps
+exported while exploring the data. What would you curate and deposit, and what would you only cite or discard?
 
-### Data Cleaning:
-Fixes errors in data i.e.,
+:::::::::::::::: solution
 
-- Missing values
-- Typos
-- Duplicates
+- **(a)** Cite precisely (product, year, URL, date accessed). It is already preserved by the Census Bureau.
+- **(b)** Curate and deposit: it is unique, and recreating it would mean repeating the field work.
+- **(c)** Deposit with the data: the code documents exactly how results were produced.
+- **(d)** Keep only the maps used in publications; exploratory maps can be regenerated from (a) to (c).
 
-### Data Curation:
-Maintains long-term usability.
-
-- Documentation
-- Preservation
-- Versioning
-
-Both are necessary.
-
----
-
-## File Formats Matter
-
-Choose formats that are:
-
-- Open
-- Reusable
-- Non-proprietary
-
-Preferred:
-
-- CSV instead of XLSX
-- TXT instead of DOCX for plain text
-- GeoJSON instead of closed GIS formats when possible
-
----
-
-## Version Control in Data Curation
-
-Track changes to files over time.
-
-Methods:
-
-- Version numbering (`v1`, `v2`)
-- Git / GitHub
-- Changelogs
-
-Example:
-`survey_cleaned_v3.csv`
-
-::::::::::::::::::::::::::::::::::::: callout
-
-### Tip
-Never overwrite original raw data.
-
-Keep raw data unchanged.
+:::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
----
+::::::::::::::::::::::::::::::::::::: keypoints
 
-## Backup and Preservation
-
-Use the 3-2-1 Rule:
-
-- 3 copies of data
-- 2 different storage types
-- 1 offsite backup
-
-Example:
-
-- Local computer
-- External drive
-- Cloud storage
-
----
-
-## FAIR Principles
-
-Good curated data should be:
-
-### F — Findable
-Easy to locate
-
-### A — Accessible
-Available to authorized users
-
-### I — Interoperable
-Compatible with other systems
-
-### R — Reusable
-Well-documented and understandable
-
-::::::::::::::::::::::::::::::::::::: callout
-
-### FAIR Data = Better Science
-The FAIR framework is widely used in research data management.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
----
-
-## Common Challenges in Data Curation
-
-- Inconsistent naming
-- Missing metadata
-- Lost context over time
-- Proprietary formats
-- Lack of backup
-
----
-
-## Real-World Example
-
-Imagine sharing a climate dataset without:
-
-- Units
-- Dates
-- Sensor details
-
-Even accurate data becomes nearly useless without context.
-
----
-
-## Hands-On Exercise
-
-### Task:
-Create a curated folder structure for a sample project.
-
-Include:
-
-- Raw data folder
-- Clean data folder
-- README file
-- Metadata sheet
-
-Tip: You can check our GitHub page on how we handled our data. 
-
----
-
-## Accessibility and Ethics in Data Curation
-
-Remember:
-
-- Protect sensitive data
-- Remove personal identifiers
-- Follow privacy guidelines
-- Respect licensing restrictions
-
----
-
-## Final Takeaways
-
-Good data curation:
-
-- Saves time later
-- Prevents mistakes
-- Improves collaboration
-- Makes research reproducible
-
-::::::::::::::::::::::::::::::::::::: discussion
-
-- Have you ever struggled with poorly organized data?
-- What curation practice would improve your current workflow most?
+- Data curation makes data understandable, trustworthy and reusable over the long term by people outside the project
+- Curation complements data management (during the project) and data cleaning (fixing errors)
+- The curation lifecycle runs from creation through appraisal, description, ingest, preservation, access and reuse
+- Funders and federal policy increasingly require data underlying publications to be shared
+- FAIR data is findable, accessible, interoperable and reusable, which does not always mean open
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
